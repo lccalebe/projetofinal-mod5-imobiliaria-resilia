@@ -6,8 +6,12 @@
 
 .footer .container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,0fr);
     gap: 1.2rem;
+    position:relative;
+    left: 640px;
+    
+
 }
 
 .footer .col {
