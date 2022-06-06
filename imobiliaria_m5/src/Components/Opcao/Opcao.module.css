@@ -1,0 +1,60 @@
+.opcao {
+    width:100%;
+    margin: 4rem 0;
+    text-align: center;
+}
+.opcao > div {
+    display: flex;
+    justify-content:center;
+  
+
+}
+
+.opcao > div p {
+    margin: 1 rem 2 rem;
+    font-size: 1.2 rem;
+}
+.negrito
+{
+    font-weight: 700;
+
+}
+p{
+    color: rgb(199, 154, 56);
+}
+
+.opcao .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.2rem;
+    padding: 1 rem;
+}
+.opcao img{
+    width:100%;
+    
+}
+
+@media screen and (max-Width:940px) {
+    
+    .opcao{
+         margin: 1rem 0;
+
+     }
+    .opcao > div p {
+         margin: 1 rem;
+         font-size: 1 rem;
+
+     }
+
+    .opcao .containerCab {
+         grid-template-columns: 1fr;
+         grid-gap: .5rem;
+     }
+}
+
+@media screen and (max-width: 478px){
+    .opcao > div p {
+        margin: 1rem .5rem;
+
+    }
+}

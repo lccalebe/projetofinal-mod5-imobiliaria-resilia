@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.filtroHeader{
+   
+    height:80vh;
+    width:100%;
+    position: relative;
+    margin-bottom:4rem;
+}
+.filtroHeader:before {
+    content: '';
+    background: url('../../assets/fundo2.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    
+    
+}
+.filtroHeader .content {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+    
+
+}
+.filtroHeader h1{
+    font-size:3.5rem;
+    text-transform: capitalize;
+}
+.filtroHeader .findText{
+    margin: 1.5rem;
+    font-size: 1.4rem;
+    color: rgb(199, 154, 56);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.281);
+
+}
+.titulon{
+    color: rgb(205, 198, 176);
+    text-transform: 700;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.281);
+   
+ 
+ }
+
+
+
+.procurar{
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content:space-between;
+    align-items: center;
+    padding: 4px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right top, #e7c0112b, #eacd4d43, #edd77659, #f0e29c39, #f4ecc124, #f5edc64c, #f5efcb11, #f6f0d034, #f4eab63d, #f1e39c51, #efdd8242, #ecd6675b);
+}
+
+.procurar input[type=text]{
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2 rem;
+    color:antiquewhite;
+    
+    
+}
+
+.procurar input[type=text]:focus{
+    outline: none;
+    
+
+}
+.procurar label {
+    padding: 0 14px 0 8px;
+}
+.procurar .radio{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    align-items: center;
+    color: rgb(255, 200, 0);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.46);
+}
+
+.procurar button {
+    
+    border: 1px solid ;
+ 
+    padding: 10px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .filtroHeader {
+        height: 70vh;
+
+    }
+    .filtroHeader h1{
+        font-size:2.5rem;
+    }
+    .procurar input[type=text] {
+        width:100%;
+    }
+}

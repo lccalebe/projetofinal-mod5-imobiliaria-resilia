@@ -1,0 +1,123 @@
+ @import url('https://fonts.googleapis.com/css2? family= Mukta:wght@200 & family= Roboto+Condensed:ital@1 & display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style-type: none;
+  
+}
+
+a{
+  text-decoration:none;
+  color:blue;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sem serifa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.containerCab{
+  max-width:1240px;
+  margin:auto;
+
+  width:100%;
+
+}
+.cabecalho{
+    Width:100%;
+    height:90px;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    
+}
+.cabecalho .containerCab{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1 rem;
+   
+}
+
+span {
+    color: rgb(255, 200, 0);
+}
+h2{
+  color: rgb(199, 154, 56);
+}
+.cabecalho .navMenu{
+    display: flex;
+    
+}
+.cabecalho li{
+    padding:1rem;
+    
+    
+}
+.ElTracitos{
+    display: none;
+    
+
+}
+.cabecalho .icon{
+    font-size:1.5rem;
+    color: rgb(199, 154, 56);
+}
+
+.btn {
+  color: rgb(199, 154, 56);
+  padding: 12px 24px;
+  background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+  border:solid rgba(128, 128, 128, 0.38);
+  border-radius:8px;
+  font-size: 1rem;
+  transition: .4s;
+  cursor: pointer;
+
+}
+
+.btn:active {
+  transform: translate(4px);
+  box-shadow: 0px 0px 1px rgba(0,0,0,0,.2);
+  border-bottom:none;
+}
+
+@media screen and (max-width:940px) {
+    .ElTracitos{
+        display:block;
+    }
+
+    .cabecalho .navMenu{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top:90px;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba( 255,255,255, .98);
+        transition: 0.4s ease-in-out;
+        z-index:10;
+        
+    }
+    .cabecalho .active {
+        right:0;
+    }
+    .cabecalho .navMenu li a {
+        font-size:2rem;
+        
+    }
+}
