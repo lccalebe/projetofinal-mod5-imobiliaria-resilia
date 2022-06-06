@@ -26,6 +26,9 @@ const FiltroHeader = () => {
 
 
         </form>
+        <div>
+        <button className={styles.btn}>Sign In</button>
+        </div>
       </div>
     </div>
   )

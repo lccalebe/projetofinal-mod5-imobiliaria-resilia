@@ -28,11 +28,39 @@ p{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2rem;
     padding: 1 rem;
+    
 }
 .opcao img{
     width:100%;
+    border:solid; 
+    color: rgba(165, 161, 149, 0.567);
+    border-radius: 30px;
+    
     
 }
+.btn2 {
+    color: rgb(199, 154, 56);
+    width:18%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    margin-top:20px;
+    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    border:solid rgba(128, 128, 128, 0.38);
+    border-radius:8px;
+    font-size: 0.8rem;
+    transition: .7s;
+    cursor: pointer;
+    display:inline;
+
+  }
+  
+  .btn:active {
+    transform: translate(5px);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0,.2);
+    border-bottom:none;
+  }
 
 @media screen and (max-Width:940px) {
     
