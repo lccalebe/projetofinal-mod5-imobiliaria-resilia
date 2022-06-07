@@ -24,6 +24,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
+.LogoBee{
+  width:20%;
+  margin-top:5px;
+  display:flex;
+  
+}
 
 .containerCab{
   max-width:1240px;
@@ -39,7 +45,7 @@ body {
     left: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
     
 }
 .cabecalho .containerCab{
