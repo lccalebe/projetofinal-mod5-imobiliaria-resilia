@@ -4,6 +4,7 @@ import {FaRegTimesCircle} from 'react-icons/fa'
 import {BiBuildingHouse} from 'react-icons/bi'
 import styles from'./Cabecalho.module.css'
 import BeeImoveis from'../../assets/BeeImoveis.png'
+import { Link } from 'react-router-dom'
 
 const Cabecalho = () => {
 
@@ -20,7 +21,7 @@ const Cabecalho = () => {
           
           <ul className={`${styles.navMenu} ${click &&styles.active}`}>
 
-              <li><a href='#'>Home</a></li>
+              <Link to={'/'}><li><a href='#'>Home</a></li></Link>
               <li><a href='#'>Pesquisar</a></li>
               <li><a href='#'>Sobre</a></li>
               <li><a href='#'>Contato</a></li>
