@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Styles from './Cadastro.module.css';
-import home from '../../Assets/home.jpg';
+import home from '../../assets/home.jpg';
 
 
 const Cadastro = () => {
