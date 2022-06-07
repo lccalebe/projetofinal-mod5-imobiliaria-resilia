@@ -1,18 +1,25 @@
 import { useState } from 'react'
-import './App.css'
-import NavBar from './Components/Navbar/NavBar'
-import Hero from './Components/Hero/Hero'
-import Best from './Components/best/Best'
+import Cabecalho from './Components/Cabecalho/Cabecalho'
+import FiltroHeader from './Components/FiltroHeader/FiltroHeader'
+import Opcao from './Components/Opcao/Opcao'
+import Featured from './Components/Featured/Featured'
+import Rodape from './Components/rodape/Rodape'
+import Cadastro from './Components/Cadastro/Cadastro'
+import Login from './Components/Cadastro/Login'
+import styles from './App.module.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <NavBar />
-      <Hero />
-      <Best />
-     
+    <div className={styles.App}>
+      <Cabecalho />
+      <FiltroHeader />
+      <Opcao />
+      <Featured />
+      <Rodape />
+      <Cadastro/>
+      <Login/>
     </div>
   )
 }

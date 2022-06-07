@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2? family= Mukta:wght@200 & family= Roboto+Condensed:ital@1 & display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style-type: none;
+  
+}
+
+a{
+  text-decoration:none;
+  color:blue;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sem serifa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.LogoBee{
+  width:20%;
+  margin-top:5px;
+  display:flex;
+  
+}
+
+.containerCab{
+  max-width:1240px;
+  margin:auto;
+
+  width:100%;
+
+}
+.cabecalho{
+    Width:100%;
+    height:90px;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  
+    background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
+    
+}
+.cabecalho .containerCab{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1 rem;
+   
+}
+
+span {
+    color: rgb(255, 200, 0);
+}
+h2{
+  color: rgb(199, 154, 56);
+}
+.cabecalho .navMenu{
+    display: flex;
+    
+}
+.cabecalho li{
+    padding:1rem;
+    
+    
+}
+.ElTracitos{
+    display: none;
+    
+
+}
+.cabecalho .icon{
+    font-size:1.5rem;
+    color: rgb(199, 154, 56);
+}
+
+
+
+@media screen and (max-width:940px) {
+    .ElTracitos{
+        display:block;
+    }
+
+    .cabecalho .navMenu{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top:90px;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba( 255,255,255, .98);
+        transition: 0.4s ease-in-out;
+        z-index:10;
+        
+    }
+    .cabecalho .active {
+        right:0;
+    }
+    .cabecalho .navMenu li a {
+        font-size:2rem;
+        
+    }
+}
