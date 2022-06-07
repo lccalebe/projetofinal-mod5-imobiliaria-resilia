@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
+import { Link } from "react-router-dom";
 
 
 function Vendas() {
@@ -66,6 +67,10 @@ function Vendas() {
                     
                 </div>
             </main>
+
+            <Link to={'/vendasPost'}>
+                <button>Registrar Novo Imovel</button>
+            </Link>
 
             <Rodape />
         </div>
