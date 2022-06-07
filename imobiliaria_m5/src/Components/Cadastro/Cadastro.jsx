@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Styles from './Cadastro.module.css';
-import home from '../../assets/home.jpg';
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 
 const Cadastro = () => {
@@ -15,7 +15,7 @@ const Cadastro = () => {
                 {/*Titulo e imagem*/}
                 <div className={Styles.titulo}> 
                     <span className={Styles.formTitulo}>Cadastre-se!
-                        <img src={home} alt="Casa com familia"/>
+                        <img src={BeeImoveis} alt="Casa com familia"/>
                     </span>
                 </div>
             

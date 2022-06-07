@@ -45,6 +45,7 @@ body {
     left: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+  
     background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
     
 }

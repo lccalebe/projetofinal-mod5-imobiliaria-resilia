@@ -1,15 +1,17 @@
 .featured {
     margin-top: 5rem;
     color: rgba(165, 161, 149, 0.549);
+   
 }
 
 .featured .featuredText {
     text-align: center;
     margin: 1rem 0;
+    color: rgb(194, 165, 141);
     
 }
 .featuredText{
-    color: rgb(205, 198, 176);
+    color: rgb(194, 165, 141);
 }
 
 .featured .container {
@@ -22,7 +24,9 @@
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
-    gap: var(--gap)
+    gap: var(--gap);
+    
+    
 }
 
 .featured .container img {
@@ -86,7 +90,7 @@ p{
 
 .featured .top .price {
     font-weight: 600;
-    color: blue;
+    color: rgba(62, 51, 5, 0.459);
     font-size: 1.5rem;
 }
 

@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(212, 226, 131);
+    background:rgba(195, 171, 151, 0.576);
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -18,8 +18,8 @@
 .containerInicio{
     width: 450px;
     height: 600px;
-    background-color: rgba(158, 169, 173, 0.5);
-    border: 2px solid rgb(109, 122, 48);
+    background-color: rgba(243, 241, 231, 0.279);
+    border: 2px solid rgba(243, 241, 231, 0.279);
     border-radius: 7%;
     overflow: hidden;
     padding: 40px 60px 40px 60px;
@@ -31,7 +31,7 @@
     align-items: center;
     font-size:30px;
     text-align: center;
-    color:rgb(109, 122, 48);
+    color:rgb(91, 89, 87);
     line-height: 1.2;
 }
 
@@ -94,7 +94,7 @@
 
 .focusInput::after{
     font-size: 15px;
-    color: rgb(109, 122, 48);
+    color:  rgba(243, 241, 231, 0.279);
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;
@@ -139,7 +139,9 @@
 
 .formulariosBtn{
     font-size: 15px;
-    color:rgb(109, 122, 48);
+    color: rgba(91, 89, 87, 0.812);
+    text-transform: 700;
+   
     border: none;
     border-radius: 7px;
     /*background-color:rgb(121, 110, 110);*/
@@ -150,10 +152,7 @@
     align-items: center;
     width: 90px;
     height: 50px;
-    background: -webkit-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: -o-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: -moz-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
+    background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
 }
 
 .formulariosBtn:hover{
