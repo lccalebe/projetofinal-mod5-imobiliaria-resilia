@@ -6,12 +6,13 @@ import Featured from './Components/Featured/Featured'
 import Rodape from './Components/rodape/Rodape'
 import Cadastro from './Components/Cadastro/Cadastro'
 import Login from './Components/Cadastro/Login'
+import styles from './App.module.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Cabecalho />
       <FiltroHeader />
       <Opcao />

@@ -1,10 +1,11 @@
 *{
     margin:0;
     padding:0;
+    
 
 }
 .filtroHeader{
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.2);
     height:80vh;
     width:100%;
     position: relative;
@@ -12,7 +13,7 @@
 }
 .filtroHeader:before {
     content: '';
-    background: url('../../assets/fundo2.jpg') no-repeat center center/cover;
+    background: url('../../assets/fundo.jpg') no-repeat center center/cover;
     height:100%;
     width:100%;
     position: absolute;
@@ -45,13 +46,13 @@
 .filtroHeader .findText{
     margin: 1.5rem;
     font-size: 1.4rem;
-    color: rgba(241, 224, 195, 0.725);
+    color: rgba(63, 61, 58, 0.61);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.281);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 
 }
 .titulon{
-    color: rgb(205, 198, 176);
+    color: rgba(135, 79, 42, 0.578);
     text-transform: 700;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.281);
    
@@ -118,7 +119,7 @@
     padding: 12px 24px;
     margin-top:50px;
     background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
-    border:solid rgba(128, 128, 128, 0.38);
+    border:solid rgba(216, 206, 206, 0.38);
     border-radius:8px;
     font-size: 0.8rem;
     transition: .7s;
