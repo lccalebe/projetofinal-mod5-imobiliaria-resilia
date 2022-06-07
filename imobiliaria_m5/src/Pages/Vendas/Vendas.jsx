@@ -51,9 +51,11 @@ function Vendas() {
 
                                 <div className='btns'>
                                     
+                                    <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
                                         <div className='btn-edit'>
                                             <button>Edit</button>
                                         </div>
+                                    </Link>
                                         
 
                                     <div className='btn-delete'>
