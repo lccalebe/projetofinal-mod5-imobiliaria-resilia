@@ -25,7 +25,7 @@ const Opcao = () => {
             <img src={} alt='' />
             <img src={} alt='' /> */}
         </div>
-        <Link to={'/aluguel'}>
+        <Link to={'/corretores'}>
         <button className={styles.btn2}>View All</button>
         </Link>
     </div>
