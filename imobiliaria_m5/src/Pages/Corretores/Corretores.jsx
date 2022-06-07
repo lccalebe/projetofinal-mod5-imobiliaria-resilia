@@ -5,25 +5,25 @@ import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
 
 
-function Aluguel() {
+function Corretores() {
 
-    const [aluguel, setAluguel] = useState([]);
+    const [corretores, setCorretores] = useState([]);
 
     useEffect(() => {
-        axios.get('https://imobiliariaresilia.herokuapp.com/aluguel/')
+        axios.get('https://imobiliariaresilia.herokuapp.com/corretores/')
         .then((response) => {
-            setAluguel(response.data)
-            console.log('Deu Certo')
+            setCorretores(response.data)
+            console.log("DEU CERTO")
         })
         .catch(() => {
             console.log('Deu Errado')
         })
     },[])
 
-    function deleteAluguel(id) {
-        axios.delete(`https://imobiliariaresilia.herokuapp.com/aluguel/${id}`)
+    function deleteCorretor(id) {
+        axios.delete(`https://imobiliariaresilia.herokuapp.com/corretores/${id}`)
         
-        setAluguel(aluguel.filter(aluguel => aluguel.ID !== id))
+        setCorretores(corretores.filter(corretores => corretores.ID !== id))
     }
 
     return(
@@ -33,24 +33,23 @@ function Aluguel() {
             <main>
                 <div className="cards">
 
-                    {aluguel.map((aluguel, key) => {
+                    {corretores.map((corretores, key) => {
                         return (
                             <div className='card'>
 
                                 <header>
-                                    <h2>{aluguel.ALUGUELTIPO}</h2>                            
+                                    <h2>{corretores.NOME}</h2>                            
                                 </header>   
 
-                                <p>Valor: {aluguel.VALOR}</p>
-                                <p>Endereço: {aluguel.ENDERECO}</p>
-                                <p>ID Corretor: {aluguel.CORRETORID}</p>
-                                <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
-                                <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-                                {/*<img src={aluguel.IMG1} alt=''/>*/}
+                                <p>E-mail: {corretores.EMAIL}</p>
+                                <p>Senha: {corretores.SENHA}</p>
+                                <p>ID Corretor: {corretores.CODIGO}</p>
+                                <p>Comição por Venda: {corretores.COMICAOPORVENDA}</p>
+                                {/*<img src={corretores.IMG1} alt=''/>*/}
 
                                 <div className='btns'>
                                     
-                                    <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
+                                    <Link to={{ pathname: `/corretoresEdit/${corretores.ID}` }}>
                                         <div className='btn-edit'>
                                             <button>Edit</button>
                                         </div>
@@ -58,7 +57,7 @@ function Aluguel() {
                                         
 
                                     <div className='btn-delete'>
-                                        <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
+                                        <button onClick={() => {deleteCorretor(corretores.ID)} }>Delete</button>
                                     </div>
 
                             </div>
@@ -69,8 +68,8 @@ function Aluguel() {
                 </div>
             </main>
 
-            <Link to={'/aluguelPost'}>
-                <button>Registrar Novo Imovel</button>
+            <Link to={'/corretoresPost'}>
+                <button>Registrar Novo Corretor</button>
             </Link>
 
             <Rodape />
@@ -78,4 +77,4 @@ function Aluguel() {
     )
 }
 
-export default Aluguel;
+export default Corretores;

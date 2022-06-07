@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 
-function AluguelEdit() {
+function CorretoresEdit() {
 
     const { id } = useParams();
 
@@ -13,13 +13,13 @@ function AluguelEdit() {
 
     const { register, handleSubmit} = useForm();
 
-    const registroAluguel = data => axios.put(`https://imobiliariaresilia.herokuapp.com/aluguel/${id}`, data)
+    const registroCorretores = data => axios.put(`https://imobiliariaresilia.herokuapp.com/corretores/${id}`, data)
     .then(() => {
-        console.log("Deu Certo")
-        history('/aluguel')
+        console.log('deu certo')
+        history('/corretores');
     })
     .catch(() => {
-        console.log("Deu errado")
+        console.log("deu errado")
     })
 
     return (
@@ -28,40 +28,35 @@ function AluguelEdit() {
 
             <div className="card-post">
 
-                <h1>Criar novo registro de venda</h1>
+                <h1>Criar novo registro de Corretor</h1>
                 <div className="line-post"></div>
 
                 <div className="card-body-post">
-                    <form onSubmit={handleSubmit(registroAluguel)}>
+                    <form onSubmit={handleSubmit(registroCorretores)}>
 
                         <div className="fields">
-                            <label>Tipo</label>
-                            <input type="text" name="AluguelTIPO" {...register("ALUGUELTIPO")}></input>
+                            <label>Nome</label>
+                            <input type="text" name="NOME" {...register("NOME")}></input>
                         </div>
 
                         <div className="fields">
-                            <label>Valor</label>
-                            <input type="text" name="VALOR" {...register("VALOR")}></input>
+                            <label>E-mail</label>
+                            <input type="text" name="EMAIL" {...register("EMAIL")}></input>
                         </div>
 
                         <div className="fields">
-                            <label>Endereço</label>
-                            <input type="text" name="ENDERECO" {...register("ENDERECO")}></input>
+                            <label>SENHA</label>
+                            <input type="text" name="SENHA" {...register("SENHA")}></input>
                         </div>
 
                         <div className="fields">
                             <label>ID Corretor</label>
-                            <input type="number" name="CORRETORID" {...register("CORRETORID")}></input>
+                            <input type="number" name="CODIGO" {...register("CODIGO")}></input>
                         </div>
 
                         <div className="fields">
-                            <label>ID Proprietario</label>
-                            <input type="number" name="PROPRIETARIOID" {...register("PROPRIETARIOID")}></input>
-                        </div>
-
-                        <div className="fields">
-                            <label>ID Inquilino</label>
-                            <input type="number" name="INQUILINOID" {...register("INQUILINOID")}></input>
+                            <label>Comição por Venda</label>
+                            <input type="number" name="COMICAOPORVENDA" {...register("COMICAOPORVENDA")}></input>
                         </div>
                         
                         <div className="btn-post">
@@ -78,4 +73,4 @@ function AluguelEdit() {
     )
 }
 
-export default AluguelEdit;
+export default CorretoresEdit;
