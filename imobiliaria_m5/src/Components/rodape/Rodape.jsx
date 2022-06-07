@@ -1,45 +1,38 @@
 import React from 'react'
-import {FaFacebook, FaInstagram, FaTwitter, FaPinterest} from 'react-icons/fa'
-import './Rodape.module.css'
 
-const Rodape = () => {
+import {FaFacebook, FaInstagram, FaTwitter, FaPinterest} from 'react-icons/fa'
+
+import styles from './Rodape.module.css'
+
+
+const Footer = () => {
     return (
-        <div className='footer'>
-            <div className='social'>
-          
+        <div className={styles.footer}>
+            <div className={styles.social}>
+                <FaFacebook className={styles.icon} />
+                <FaInstagram className={styles.icon} />
+                <FaTwitter className={styles.icon} />
+                <FaPinterest className={styles.icon} />
             </div>
-            <div className='container'>
-                <div className='col'>
-                    <h3>About</h3>
-                    <p>Company</p>
-                    <p>Details</p>
-                    <p>Planning</p>
-                    <p>About Us</p>
+            <div className={styles.container}>
+                <div className={styles.col}>
+                    <h3>Sobre </h3>
+                    <p>Empresa </p>
+                    <p>Detalhes </p>
+                    <p>Planejamento </p>
+                    <p>Quem somos</p>
                 </div>
-                <div className='col'>
-                    <h3>Company</h3>
-                    <p>Company</p>
-                    <p>Details</p>
-                    <p>Planning</p>
-                    <p>About Us</p>
+                <div className={styles.col}>
+                    <h3>Empresa </h3>
+                    <p>Empresa </p>
+                    <p>Detalhes </p>
+                    <p>Planejamento</p>
+                    <p>Quem somos</p>
                 </div>
-                <div className='col'>
-                    <h3>Legal</h3>
-                    <p>Company</p>
-                    <p>Details</p>
-                    <p>Planning</p>
-                    <p>About Us</p>
-                </div>
-                <div className='col'>
-                    <h3>Information</h3>
-                    <p>Company</p>
-                    <p>Details</p>
-                    <p>Planning</p>
-                    <p>About Us</p>
-                </div>
-            </div>
+
+        </div>
         </div>
     )
 }
 
-export default Rodape
+export default Footer

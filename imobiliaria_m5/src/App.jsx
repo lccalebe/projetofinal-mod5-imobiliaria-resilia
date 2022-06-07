@@ -4,6 +4,8 @@ import FiltroHeader from './Components/FiltroHeader/FiltroHeader'
 import Opcao from './Components/Opcao/Opcao'
 import Featured from './Components/Featured/Featured'
 import Rodape from './Components/rodape/Rodape'
+import Cadastro from './Components/Cadastro/Cadastro'
+import Login from './Components/Cadastro/Login'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +17,8 @@ function App() {
       <Opcao />
       <Featured />
       <Rodape />
-    
+      <Cadastro/>
+      <Login/>
     </div>
   )
 }
