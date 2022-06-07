@@ -8,6 +8,7 @@ import Cadastro from './Components/Cadastro/Cadastro'
 import Login from './Components/Cadastro/Login'
 import styles from './App.module.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,6 +21,8 @@ function App() {
       <Rodape />
       <Cadastro/>
       <Login/>
+
+    
     </div>
   )
 }

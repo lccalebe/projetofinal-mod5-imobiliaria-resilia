@@ -47,7 +47,7 @@ const Login = () => {
                     {/*Mudar para Cadastro*/}
                 <div className={Styles.textoCentro}>
                     <span className={Styles.texto1}>Não possui cadastro?</span>
-                    <a className={Styles.texto2} href='#'>Cadastre-se aqui!</a>
+                    <Link className={Styles.texto2} to={'/Cadastro'}>Cadastre-se aqui!</Link>
                 </div>
 
             </div>
