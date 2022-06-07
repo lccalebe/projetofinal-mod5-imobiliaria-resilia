@@ -16,7 +16,7 @@ const Cabecalho = () => {
           <h2>
               <span><BiBuildingHouse/>Bee</span>.Imoveis
           </h2>
-          <button className={styles.btn}>Sign In</button>
+          
           <ul className={`${styles.navMenu} ${click &&styles.active}`}>
 
               <li><a href='#'>Home</a></li>

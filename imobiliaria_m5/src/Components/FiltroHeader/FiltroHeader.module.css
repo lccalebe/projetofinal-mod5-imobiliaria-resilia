@@ -4,7 +4,7 @@
 
 }
 .filtroHeader{
-   
+    background-color: rgba(0,0,0,.4);
     height:80vh;
     width:100%;
     position: relative;
@@ -19,6 +19,7 @@
     top: 0;
     left: 0;
     z-index:-1;
+    opacity:20px;
     
     
 }
@@ -31,6 +32,9 @@
     max-width: 700px;
     margin: auto;
     padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     
 
 }
@@ -41,8 +45,9 @@
 .filtroHeader .findText{
     margin: 1.5rem;
     font-size: 1.4rem;
-    color: rgb(199, 154, 56);
+    color: rgba(241, 224, 195, 0.725);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.281);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 
 }
 .titulon{
@@ -57,7 +62,7 @@
 
 .procurar{
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(105, 85, 60);
     justify-content:space-between;
     align-items: center;
     padding: 4px;
@@ -70,7 +75,7 @@
     background-color: transparent;
     width: 400px;
     font-size: 1.2 rem;
-    color:antiquewhite;
+    -webkit-text-stroke: 1px rgba(2, 2, 2, 0.191);
     
     
 }
@@ -79,31 +84,61 @@
     outline: none;
     
 
+    
+
 }
+
 .procurar label {
     padding: 0 14px 0 8px;
 }
 .procurar .radio{
     display: flex;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed', sem serifa;
     font-weight: 700;
     align-items: center;
-    color: rgb(255, 200, 0);
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.46);
+    color: rgba(184, 153, 50, 0.584);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.19);
+    
 }
 
 .procurar button {
-    
     border: 1px solid ;
- 
+    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    color:rgb(198, 187, 153);
     padding: 10px;
     border-radius: 8px;
     cursor:pointer;
 }
+.btn {
+    color: rgb(199, 154, 56);
+    width:18%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    margin-top:50px;
+    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    border:solid rgba(128, 128, 128, 0.38);
+    border-radius:8px;
+    font-size: 0.8rem;
+    transition: .7s;
+    cursor: pointer;
+    display:inline;
+  
+   
+  
+  }
+  
+  .btn:active {
+    transform: translate(5px);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0,.2);
+    border-bottom:none;
+  }
 
 @media screen and (max-width: 940px) {
     .filtroHeader {
         height: 70vh;
+        
 
     }
     .filtroHeader h1{

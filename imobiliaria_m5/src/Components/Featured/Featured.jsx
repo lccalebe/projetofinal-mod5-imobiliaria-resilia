@@ -17,19 +17,19 @@ import LivingRoom from '../../assets/living-room.jpg'
 const Featured = () => {
     return (
         <div className={styles.featured}>
-            <h1 className={styles.featuredText}>Top Featured Listings</h1>
-            <p className={styles.featured}>Selected listings by City, State, & Zip based on views.</p>
+            <h1 className={styles.featuredText}>Destaques em luxo</h1>
+            <p className={styles.featured}>Listagem de Residencial a venda.</p>
             <div className={styles.container}>
                 <img className={`${styles.span3} ${styles.imageGridRow2}`} src={House1} alt='' />
                 <img src={Bed1} alt='' />
                 <img src={Bed2} alt='' />
                 <img src={Kitchen} alt='' />
                 <img src={Bathroom} alt='' />
-                <div className={`${styles.span3} ${styles.imgDetails}`}>
+            <div className={`${styles.span3} ${styles.imgDetails}`}>
                     <div className={styles.top}>
-                        <h2>123 Acme St. Dallas, TX</h2>
-                        <p>House for Sale</p>
-                        <p className={styles.price}>$2,677,000</p>
+                        <h2><p>Rua:</p>Epitacio pessoa, 389. Paraíba</h2>
+                        <p>Casa de Luxo á venda</p>
+                        <p className={styles.price}>$2,800,000</p>
                     </div>
                     <div className={styles.infoGrid}>
                         <div>
@@ -45,7 +45,7 @@ const Featured = () => {
                                 <p className={styles.negrito}>Metro Quadrado:</p><p>12,09890</p>
                             </div>
                             <div className={styles.informacoes}>
-                                <p className={styles.negrito}>Est Payment:</p><p>$27,919/mo</p>
+                                <p className={styles.negrito}>Est Payment:</p><p>$27,919</p>
                             </div>
                         </div>
                     </div>

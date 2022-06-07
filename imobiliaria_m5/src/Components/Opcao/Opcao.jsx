@@ -13,8 +13,8 @@ const Opcao = () => {
         <h1> A melhor moradia para você aqui</h1>
         <div>
          <p>
-             <span className={styles.negrito}>Ver mais</span>
-             </p>
+            <span className={styles.negrito}>Ver mais</span>
+         </p>
          <p>Comercial</p>
          <p>Residencial</p>
          <p>Aluguel</p>
