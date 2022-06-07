@@ -16,7 +16,7 @@ const FiltroHeader = () => {
          <div className={styles.radio}>
            <input type='radio' checked />
            <label>Compra</label>
-           <input type='radio' />
+           <input type='radio' checked />
            <label>Aluguel</label>
            <button type='submit'>
              <AiOutlineSearch className={styles.icon} />

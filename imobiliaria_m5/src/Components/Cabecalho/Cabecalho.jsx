@@ -3,6 +3,7 @@ import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {BiBuildingHouse} from 'react-icons/bi'
 import styles from'./Cabecalho.module.css'
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 const Cabecalho = () => {
 
@@ -14,7 +15,7 @@ const Cabecalho = () => {
     <div className={styles.cabecalho}>
         <div className={styles.containerCab}>
           <h2>
-              <span><BiBuildingHouse/>Bee</span>.Imoveis
+              <span><img className={styles.LogoBee} src={BeeImoveis} alt='' /></span>
           </h2>
           
           <ul className={`${styles.navMenu} ${click &&styles.active}`}>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Featured.module.css'
 
-import House1 from '../../assets/house1.jpg'
+{/* import House1 from '../../assets/house1.jpg'
 import Bed1 from '../../assets/bed1.jpg'
 import Bed2 from '../../assets/bed2.jpg'
 import Kitchen from '../../assets/kitchen.jpg'
@@ -12,7 +12,7 @@ import House2 from '../../assets/house2.jpg'
 import Bed3 from '../../assets/bed3.jpg'
 import Bed4 from '../../assets/bed4.jpg'
 import Bath2 from '../../assets/bath2.jpg'
-import LivingRoom from '../../assets/living-room.jpg'
+import LivingRoom from '../../assets/living-room.jpg' */}
 
 const Featured = () => {
     return (
@@ -20,11 +20,11 @@ const Featured = () => {
             <h1 className={styles.featuredText}>Destaques em luxo</h1>
             <p className={styles.featured}>Listagem de Residencial a venda.</p>
             <div className={styles.container}>
-                <img className={`${styles.span3} ${styles.imageGridRow2}`} src={House1} alt='' />
+               {/*  <img className={`${styles.span3} ${styles.imageGridRow2}`} src={House1} alt='' />
                 <img src={Bed1} alt='' />
                 <img src={Bed2} alt='' />
                 <img src={Kitchen} alt='' />
-                <img src={Bathroom} alt='' />
+                <img src={Bathroom} alt='' /> */}
             <div className={`${styles.span3} ${styles.imgDetails}`}>
                     <div className={styles.top}>
                         <h2><p>Rua:</p>Epitacio pessoa, 389. Paraíba</h2>
@@ -58,14 +58,14 @@ const Featured = () => {
 
         {/* Section section */}
         <div className={styles.container}>
-                <img className={styles.order2}  src={Bed3} alt='' />
+              {/*   <img className={styles.order2}  src={Bed3} alt='' />
                 <img className={styles.order3}  src={Bed4} alt='' />
 
                 <img className={`${styles.span3} ${styles.imageGridrow2 } ${styles.order1}`} src={House2} alt='' />
 
 
                 <img className={styles.order4}  src={Bath2} alt='' />
-                <img className={styles.order5} src={LivingRoom} alt='' />
+                <img className={styles.order5} src={LivingRoom} alt='' /> */}
 
                 <div className={`${styles.span2} ${styles.rightImgDetails } ${styles.order7}`}>
                     <p>Uma linda manhã para se passar com a familia no lugar dos seus sonhos, localizado no coração da Zona Sul, Leblon </p>
