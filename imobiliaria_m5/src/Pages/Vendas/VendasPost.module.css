@@ -157,30 +157,5 @@
     font-size: 0.8rem;
     transition: .7s;
     cursor: pointer;
-    
-}
 
-.formulariosBtn:hover{
-    cursor: pointer;
-}
-
-.textoCentro{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.texto1{
-    font-size: 15px;
-    color: white;
-    line-height: 1.5;
-    padding-right: 5px;
-    text-decoration: none;
-}
-
-.texto2{
-    font-size: 15px;
-    line-height: 1.5;
-    text-decoration: none;
 }
