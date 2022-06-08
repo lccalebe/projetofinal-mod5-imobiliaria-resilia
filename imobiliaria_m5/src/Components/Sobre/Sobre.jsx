@@ -12,42 +12,49 @@ export const Sobre = () => {
             <ul className={Styles.lista}>
 
                 <li className={Styles.somos}>Quem somos
-                    <p className={Styles.li}>Há mais de 6 meses no mercado da Resília Educação, trazendo o que há de melhor no universo 
-                        imobiliário com competência e entregando satisfação e conforto de um lar para chamar de seu, e os melhores pontos
-                        comerciais aos clientes mais exigentes.
+                    <p className={Styles.li}>A BeeImóveis está a mais de 6 meses no mercado, 
+                        trazendo o que há de melhor no setor imobiliário com competência, 
+                        agilidade e comprometimento. entregando satisfação a nossos clientes com intuito de 
+                        realizar o sonho da casa própria.
+                        Já são mais de 2.000 sonhos realizados!
                     </p>
                 </li>
 
                 <li className={Styles.somos}>Missão
-                    <p className={Styles.li}>Satisfazer as expectativas e necessidades de nossos clientes com ética, 
-                        qualidade e total transparência em nossas ações relacionadas ao mercado Imobiliário;
+                    <p className={Styles.li}>Atender nossos clientes superando suas 
+                        expectativas e necessidades sempre com ética e transparência em nossas ações.
                     </p>
                 </li>
                 
                 <li className={Styles.somos}>Visão
-                    <p className={Styles.li}>Ter como marca o reconhecimento de ser uma empresa tradicionalmente ética, respeitada, 
-                        admirada e reconhecida como a melhor opção por clientes e 
-                        colaboradores sem abrir mão da inovação em seus empreendimentos, na qualidade do atendimento e realização de sonhos.
-                        Para tanto, investimos em novas tecnologias proporcionando agilidade e eficiência com sites seguros
-                        capazes de serem acessados em qualquer lugar; 
+                    <p className={Styles.li}>Trabalhamos com os melhores imóveis, nas melhores localizações que porpiciam
+                    conforto, segurança e acessibilidade pra você e sua família.
                     </p>
                 </li>
 
                 <li className={Styles.somos}>Valores
                     <ul className={Styles.listaDeValores}>
-                        <li className={Styles.valoresValor}>Competência
-                            <p className={Styles.li}>Entender as necessidades e expectativas do cliente com o intuito de realizar sonhos;</p>
-                        </li>
-                        <li className={Styles.valoresValor}>Inovação
-                            <p className={Styles.li}>É e sempre será o diferencial de nossa marca; </p>
-                        </li>
-                        <li className={Styles.valoresValor}>Confiança
+
+                        <li className={Styles.valoresValor}>Ética
                             <p className={Styles.li}>Temos como base trabalhar com princípios éticos e transparentes
                                 gerando confiança a todos os envolvidos na negociação. </p>
+                        </li>
+
+                        <li className={Styles.valoresValor}>Competência
+                            <p className={Styles.li}>Entender as necessidades e expectativas do cliente proporcionando conforto 
+                            e segurança, pois contamos com a melhor equipe de corretores visando qualidade de 
+                            vida e conforto em seu novo lar;</p>
+                        </li>
+
+                        <li className={Styles.valoresValor}>Inovação
+                            <p className={Styles.li}>É e sempre será o diferencial de nossa marca o
+                             investimento em novas tecnologias, proporcionando agilidade e eficiência com nossos
+                            sistemas seguros e facilitando acesso por cliente, corretores e colaboradores de qualquer lugar.; </p>
                         </li>
                     </ul>
                 </li>
             </ul>
+                    
         </section>
     </div>
   )
