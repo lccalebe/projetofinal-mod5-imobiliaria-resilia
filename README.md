@@ -8,7 +8,7 @@
 
 ## Execução
     - Após todas as dependencias instaladas
-    - Para começar a execução do projeto rodar no termina:
+    - Para começar a execução do projeto rodar no terminal:
     - npm run dev
 
 ## Endpoints
