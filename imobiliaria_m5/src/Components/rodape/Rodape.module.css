@@ -5,17 +5,15 @@
 }
 
 .footer .container {
-    display: grid;
-    grid-template-columns: repeat(2,0fr);
-    gap: 1.2rem;
-    position:relative;
-    left: 640px;
-    
-
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer .col {
-    margin: auto;
+    padding: 0 3% 0 3%;
 }
 
 .footer h3 {

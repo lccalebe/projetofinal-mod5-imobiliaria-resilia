@@ -28,8 +28,9 @@ const FiltroHeader = () => {
 
         </form>
         <div>
-        
-        <button className={styles.btn}>Sign In</button>
+        <Link to={'/Login'}>
+          <button className={styles.btn}>Sign In</button>
+        </Link>
         
         </div>
       </div>
