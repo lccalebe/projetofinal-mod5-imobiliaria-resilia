@@ -20,22 +20,17 @@ const Opcao = () => {
             <img src={} alt='' />
             <img src={} alt='' /> */}
         </div>
-<<<<<<< HEAD
-        <Link to={'/adm'}>
-        <button className={styles.btn2}>View All</button>
-=======
         
         <Link to={'/vendas'}>
         <button className={styles.btn2}>Á Venda</button>
->>>>>>> 93b3be2db5d46ae371d822a0d85bbed11eda7a7c
         </Link>
-        <Link to={'/Aluguel'}>
+        <Link to={'/aluguel'}>
         <button className={styles.btn2}>Aluguel</button>
         </Link>
-        <Link to={'/Corretores'}>
+        <Link to={'/corretores'}>
         <button className={styles.btn2}>Corretores</button>
         </Link>
-        <Link to={'/Adm'}>
+        <Link to={'/adm'}>
         <button className={styles.btn2}>Adm</button>
         </Link>
         
