@@ -12,7 +12,11 @@
     - npm run dev
 
 ## Endpoints
-    - Os endpoinst utilizados nesse projeto são:
+    - A API utiliza nesse projeto foi 
+    - https://imobiliariaresilia.herokuapp.com/
+    - Essa API foi criada pela mesma equipe que fez esse projeto.
+    
+    - Os endpoints que existem nesse protejo são:
     - "/"
     - "/login"
     - "/cadastro"
