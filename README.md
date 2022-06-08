@@ -2,7 +2,9 @@
 ## IMOBILIÁRIA RESILIA :house:
 
 ## Instalação
-    - Para a instalação das dependencias do projeto, apois feito o clone digitar no termina
+    - Para a instalação das dependencias do projeto, apois fazer o clone do projeto com o comando:
+    - git clone (url do projeto)
+    - Digitar no terminal
     - npm install
     - Aguarde as dependencias serem instaladas.
 
