@@ -22,7 +22,7 @@ const Cabecalho = () => {
           <ul className={`${styles.navMenu} ${click &&styles.active}`}>
 
               <Link to={'/'}><li><a href='#'>Home</a></li></Link>
-              <li><a href='#'>Pesquisar</a></li>
+              <li><a href='#'>Cadastro</a></li>
               <li><a href='#'>Sobre</a></li>
               <li><a href='#'>Contato</a></li>
 

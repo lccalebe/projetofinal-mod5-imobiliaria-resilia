@@ -3,6 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
+import styles from './VendasPost.module.css'
 
 
 function Vendas() {
@@ -27,20 +28,20 @@ function Vendas() {
     }
 
     return(
-        <div>
+        <div >
             <Cabecalho />
 
             <main>
-                <div className="cards">
+                <div className={styles.cards}>
 
                     {vendas.map((vendas, key) => {
                         return (
-                            <div className='card'>
+                            <div className={styles.card}>
 
                                 <header>
                                     <h2>{vendas.TIPO}</h2>                            
                                 </header>   
-
+                               <div className={styles.divcard}>
                                 <p>Valor: {vendas.VALOR}</p>
                                 <p>Endereço: {vendas.ENDEREÇO}</p>
                                 <p>Quartos: {vendas.QUARTOS}</p>
@@ -48,17 +49,17 @@ function Vendas() {
                                 <p>Garagem: {vendas.GARAGEM}</p>
                                 <p>Tamanho: {vendas.TAMANHO}</p>
                                 {/*<img src={vendas.IMG1} alt=''/>*/}
-
-                                <div className='btns'>
+                                </div>
+                                <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={styles.btnDelete}>
                                         <button onClick={() => {deleteVenda(vendas.ID)} }>Delete</button>
                                     </div>
 
@@ -71,7 +72,7 @@ function Vendas() {
             </main>
 
             <Link to={'/vendasPost'}>
-                <button>Registrar Novo Imovel</button>
+                <button className={styles.btnForm}>Registrar Novo Imovel</button>
             </Link>
 
             <Rodape />

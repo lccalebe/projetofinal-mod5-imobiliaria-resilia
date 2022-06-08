@@ -42,14 +42,15 @@ p{
     
 }
 .btn2 {
-    color: rgb(199, 154, 56);
-    width:18%;
+     color: rgb(144, 114, 84);
+    background-color: rgb(41, 31, 19);
+    width:10%;
     display:flex;
+    margin: 4%;
     justify-content: center;
     align-items: center;
     padding: 6px 12px;
     margin-top:20px;
-    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
     border:solid rgba(128, 128, 128, 0.38);
     border-radius:8px;
     font-size: 0.8rem;

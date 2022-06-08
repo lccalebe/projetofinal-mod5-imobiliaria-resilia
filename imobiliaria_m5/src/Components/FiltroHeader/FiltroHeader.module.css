@@ -63,12 +63,12 @@
 
 .procurar{
     display: flex;
-    border: 1px solid rgb(105, 85, 60);
+    border: 1px solid rgba(196, 165, 126, 0.493);
     justify-content:space-between;
     align-items: center;
     padding: 4px;
     border-radius: 8px;
-    background-image: linear-gradient(to right top, #e7c0112b, #eacd4d43, #edd77659, #f0e29c39, #f4ecc124, #f5edc64c, #f5efcb11, #f6f0d034, #f4eab63d, #f1e39c51, #efdd8242, #ecd6675b);
+    background-image: linear-gradient(to right, #9b7c4a65, #a989617d, #b59878c0, #c0a690ba, #cab6a7b6, #cab6a7a8, #cab6a79e, #cab6a7ab, #c0a690c5, #b59878b8, #a98961b2, #9b7c4aac);
 }
 
 .procurar input[type=text]{
@@ -104,21 +104,21 @@
 
 .procurar button {
     border: 1px solid ;
-    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    background-color: rgb(41, 31, 19);
     color:rgb(198, 187, 153);
     padding: 10px;
     border-radius: 8px;
     cursor:pointer;
 }
 .btn {
-    color: rgb(199, 154, 56);
     width:18%;
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
     margin-top:50px;
-    background-image: linear-gradient(to right top, #e7c111, #eacc4d, #edd776, #f0e29c, #f4ecc1, #f5edc6, #f5efcb, #f6f0d0, #f4eab6, #f1e39c, #efdc82, #ecd567);
+    color: rgb(144, 114, 84);
+    background-color: rgb(41, 31, 19);
     border:solid rgba(216, 206, 206, 0.38);
     border-radius:8px;
     font-size: 0.8rem;
