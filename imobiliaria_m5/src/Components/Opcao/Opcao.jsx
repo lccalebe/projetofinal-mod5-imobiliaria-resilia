@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Opcao.module.css'
 {/* import Apt1 from '../../assets/apt1.jpeg'
 import Apt2 from '../../assets/apt2.jpeg'
@@ -24,7 +25,9 @@ const Opcao = () => {
             <img src={} alt='' />
             <img src={} alt='' /> */}
         </div>
+        <Link to={'/adm'}>
         <button className={styles.btn2}>View All</button>
+        </Link>
     </div>
     
   )

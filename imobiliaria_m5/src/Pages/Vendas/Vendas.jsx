@@ -5,14 +5,14 @@ import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
 
 
-function Aluguel() {
+function Vendas() {
 
-    const [aluguel, setAluguel] = useState([]);
+    const [vendas, setVendas] = useState([]);
 
     useEffect(() => {
-        axios.get('https://imobiliariaresilia.herokuapp.com/aluguel/')
+        axios.get('https://imobiliariaresilia.herokuapp.com/vendas/')
         .then((response) => {
-            setAluguel(response.data)
+            setVendas(response.data)
             console.log('Deu Certo')
         })
         .catch(() => {
@@ -20,10 +20,10 @@ function Aluguel() {
         })
     },[])
 
-    function deleteAluguel(id) {
-        axios.delete(`https://imobiliariaresilia.herokuapp.com/aluguel/${id}`)
+    function deleteVenda(id) {
+        axios.delete(`https://imobiliariaresilia.herokuapp.com/vendas/${id}`)
         
-        setAluguel(aluguel.filter(aluguel => aluguel.ID !== id))
+        setVendas(vendas.filter(vendas => vendas.ID !== id))
     }
 
     return(
@@ -33,24 +33,25 @@ function Aluguel() {
             <main>
                 <div className="cards">
 
-                    {aluguel.map((aluguel, key) => {
+                    {vendas.map((vendas, key) => {
                         return (
                             <div className='card'>
 
                                 <header>
-                                    <h2>{aluguel.ALUGUELTIPO}</h2>                            
+                                    <h2>{vendas.TIPO}</h2>                            
                                 </header>   
 
-                                <p>Valor: {aluguel.VALOR}</p>
-                                <p>Endereço: {aluguel.ENDERECO}</p>
-                                <p>ID Corretor: {aluguel.CORRETORID}</p>
-                                <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
-                                <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-                                {/*<img src={aluguel.IMG1} alt=''/>*/}
+                                <p>Valor: {vendas.VALOR}</p>
+                                <p>Endereço: {vendas.ENDEREÇO}</p>
+                                <p>Quartos: {vendas.QUARTOS}</p>
+                                <p>Banheiros: {vendas.BANHEIROS}</p>
+                                <p>Garagem: {vendas.GARAGEM}</p>
+                                <p>Tamanho: {vendas.TAMANHO}</p>
+                                {/*<img src={vendas.IMG1} alt=''/>*/}
 
                                 <div className='btns'>
                                     
-                                    <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
+                                    <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
                                         <div className='btn-edit'>
                                             <button>Edit</button>
                                         </div>
@@ -58,7 +59,7 @@ function Aluguel() {
                                         
 
                                     <div className='btn-delete'>
-                                        <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
+                                        <button onClick={() => {deleteVenda(vendas.ID)} }>Delete</button>
                                     </div>
 
                             </div>
@@ -69,7 +70,7 @@ function Aluguel() {
                 </div>
             </main>
 
-            <Link to={'/aluguelPost'}>
+            <Link to={'/vendasPost'}>
                 <button>Registrar Novo Imovel</button>
             </Link>
 
@@ -78,4 +79,4 @@ function Aluguel() {
     )
 }
 
-export default Aluguel;
+export default Vendas;

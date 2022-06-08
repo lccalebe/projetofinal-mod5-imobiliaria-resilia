@@ -5,14 +5,14 @@ import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
 
 
-function Aluguel() {
+function Adm() {
 
-    const [aluguel, setAluguel] = useState([]);
+    const [adm, setAdm] = useState([]);
 
     useEffect(() => {
-        axios.get('https://imobiliariaresilia.herokuapp.com/aluguel/')
+        axios.get('https://imobiliariaresilia.herokuapp.com/adm/')
         .then((response) => {
-            setAluguel(response.data)
+            setAdm(response.data)
             console.log('Deu Certo')
         })
         .catch(() => {
@@ -20,10 +20,10 @@ function Aluguel() {
         })
     },[])
 
-    function deleteAluguel(id) {
-        axios.delete(`https://imobiliariaresilia.herokuapp.com/aluguel/${id}`)
+    function deleteAdm(id) {
+        axios.delete(`https://imobiliariaresilia.herokuapp.com/adm/${id}`)
         
-        setAluguel(aluguel.filter(aluguel => aluguel.ID !== id))
+        setAdm(adm.filter(adm => adm.ID !== id))
     }
 
     return(
@@ -33,24 +33,22 @@ function Aluguel() {
             <main>
                 <div className="cards">
 
-                    {aluguel.map((aluguel, key) => {
+                    {adm.map((adm, key) => {
                         return (
                             <div className='card'>
 
                                 <header>
-                                    <h2>{aluguel.ALUGUELTIPO}</h2>                            
+                                    <h2>{adm.TIPOPLANO}</h2>                            
                                 </header>   
 
-                                <p>Valor: {aluguel.VALOR}</p>
-                                <p>Endereço: {aluguel.ENDERECO}</p>
-                                <p>ID Corretor: {aluguel.CORRETORID}</p>
-                                <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
-                                <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-                                {/*<img src={aluguel.IMG1} alt=''/>*/}
+                                <p>Tempo de Contrato: {adm.TEMPOCONTRATO}</p>
+                                <p>Taxa de Serviço: {adm.TAXASERVICO}</p>
+                                <p>Seguro Incluso: {adm.SEGUROINCLUSO}</p>
+                                {/*<img src={adm.IMG1} alt=''/>*/}
 
                                 <div className='btns'>
                                     
-                                    <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
+                                    <Link to={{ pathname: `/admEdit/${adm.ID}` }}>
                                         <div className='btn-edit'>
                                             <button>Edit</button>
                                         </div>
@@ -58,7 +56,7 @@ function Aluguel() {
                                         
 
                                     <div className='btn-delete'>
-                                        <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
+                                        <button onClick={() => {deleteAdm(adm.ID)} }>Delete</button>
                                     </div>
 
                             </div>
@@ -69,8 +67,8 @@ function Aluguel() {
                 </div>
             </main>
 
-            <Link to={'/aluguelPost'}>
-                <button>Registrar Novo Imovel</button>
+            <Link to={'/admPost'}>
+                <button>Registrar Novo Plano</button>
             </Link>
 
             <Rodape />
@@ -78,4 +76,4 @@ function Aluguel() {
     )
 }
 
-export default Aluguel;
+export default Adm;

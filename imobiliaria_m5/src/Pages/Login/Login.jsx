@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import Styles from './Cadastro.module.css';
+import Styles from '../Cadastro/Cadastro.module.css';
 import BeeImoveis from'../../assets/BeeImoveis.png'
+import Cabecalho from '../../Components/Cabecalho/Cabecalho';
+import Rodape from '../../Components/rodape/Rodape';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -10,6 +13,7 @@ const Login = () => {
 
     return (
         <section className={Styles.container}>
+            <Cabecalho />
             <div className={Styles.containerInicio}>
             
                 {/*Titulo e imagem*/}
@@ -47,13 +51,20 @@ const Login = () => {
                     {/*Mudar para Cadastro*/}
                 <div className={Styles.textoCentro}>
                     <span className={Styles.texto1}>Não possui cadastro?</span>
+<<<<<<< HEAD:imobiliaria_m5/src/Components/Cadastro/Login.jsx
                     <Link className={Styles.texto2} to={'/Cadastro'}>Cadastre-se aqui!</Link>
+=======
+                    <Link to={'/cadastro'}>
+                    <p className={Styles.texto2} >Cadastre-se aqui!</p>
+                    </Link>
+>>>>>>> dc531c739d36ea7eab44752a88b876062774c8f9:imobiliaria_m5/src/Pages/Login/Login.jsx
                 </div>
 
             </div>
+            <Rodape />
         
         </section>
     )
 }
 
-export default Login
+export default Login;
