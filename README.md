@@ -1,6 +1,36 @@
 ### PROJETO MODULO 5 - GRUPO 3
 ## IMOBILIÁRIA RESILIA :house:
 
+## Instalação
+    - Para a instalação das dependencias do projeto, apois feito o clone digitar no termina
+    - npm install
+    - Aguarde as dependencias serem instaladas.
+
+## Execução
+    - Após todas as dependencias instaladas
+    - Para começar a execução do projeto rodar no termina:
+    - npm run dev
+
+## Endpoints
+    - Os endpoinst utilizados nesse projeto são:
+    - "/"
+    - "/login"
+    - "/cadastro"
+    - "/vendas"
+      - "/vendasPost"
+      - "/vendasEdit"
+    - "/aluguel"
+      - "/aluguelPost"
+      - "/aluguelPost"
+    - "/cliente"
+      - "/clientePost"
+      - "/clientePost"
+    - "/corretores"
+      - "/corretoresPost"
+      - "/corretoresPost"
+    - "/adm"
+      - "/admPost"
+      - "/admPost"
 
 <div align="center">
 
