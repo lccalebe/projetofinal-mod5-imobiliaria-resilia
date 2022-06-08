@@ -71,6 +71,15 @@
     align-items: center;
     justify-content: space-between;
 }
+.image{
+
+    width: 20%;
+    size-adjust: 100px;
+    padding-right: 10px;
+    justify-content: space-between;
+
+}
+
 .bee{
     width:50%
 }

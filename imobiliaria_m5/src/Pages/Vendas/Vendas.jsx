@@ -49,6 +49,9 @@ function Vendas() {
                                 <p>Garagem: {vendas.GARAGEM}</p>
                                 <p>Tamanho: {vendas.TAMANHO}</p>
                                 </div>
+                                <img className={styles.image} src={vendas.IMG1} alt=''/>
+                                <img className={styles.image} src={vendas.IMG2} alt=''/>
+                                <img className={styles.image} src={vendas.IMG3} alt=''/>
                                 <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
