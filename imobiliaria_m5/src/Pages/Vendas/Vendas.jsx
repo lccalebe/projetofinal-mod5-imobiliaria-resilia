@@ -42,15 +42,12 @@ function Vendas() {
                                     <h2>{vendas.TIPO}</h2>                            
                                 </header>   
                                <div className={styles.divcard}>
-                                   <div className={styles.cardbody}>
                                 <p>Valor: {vendas.VALOR}</p>
                                 <p>Endereço: {vendas.ENDEREÇO}</p>
                                 <p>Quartos: {vendas.QUARTOS}</p>
                                 <p>Banheiros: {vendas.BANHEIROS}</p>
                                 <p>Garagem: {vendas.GARAGEM}</p>
                                 <p>Tamanho: {vendas.TAMANHO}</p>
-                                </div>
-                                <img className={styles.image} src={vendas.IMG1} alt=''/>
                                 </div>
                                 <div className={styles.Btns}>
                                     

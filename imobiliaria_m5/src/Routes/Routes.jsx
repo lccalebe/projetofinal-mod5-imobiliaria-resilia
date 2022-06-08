@@ -18,6 +18,9 @@ import Login from "../Pages/Login/Login";
 import Vendas from "../Pages/Vendas/Vendas";
 import VendasEdit from "../Pages/Vendas/VendasEdit";
 import VendasPost from "../Pages/Vendas/VendasPost";
+import Erro from "../Pages/Manutencao/Manutencao";
+import Manutencao from "../Pages/Manutencao/Manutencao";
+
 
 function Rotas() {
     return (
@@ -40,7 +43,9 @@ function Rotas() {
                 <Route path="/admPost" element={<AdmPost />}></Route>
                 <Route path="/admEdit/:id" element={<AdmEdit />}></Route>  
                 <Route path="/login" element={<Login />}></Route>
-                <Route path="/cadastro" element={<Cadastro />}></Route>        
+                <Route path="/cadastro" element={<Cadastro />}></Route>  
+                <Route path="/*" element={<Manutencao />}></Route>           
+      
             </Routes>
         </Router>
     )

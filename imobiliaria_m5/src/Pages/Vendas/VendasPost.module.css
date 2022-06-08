@@ -1,26 +1,23 @@
-.cardPost{
-    display:flex;
-    justify-content: center; 
-    flex-direction: column;
-    align-items:center;
-    z-index: -1;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     background:rgba(195, 171, 151, 0.576);
-    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-      
 }
-.tituloRv{
-    padding:30px;
 
-}
-.linePost{
-    width: 450px;
-    height: 600px;
+.containerInicio{
+    margin: 40px;
+    width: 650px;
+    height: 1000px;
     background-color: rgba(243, 241, 231, 0.279);
     border: 2px solid rgba(243, 241, 231, 0.279);
     border-radius: 7%;
@@ -28,60 +25,162 @@
     padding: 40px 60px 40px 60px;
 }
 
-.btnForm{
-    width:18%;
-    display:flex;
+.titulo .formTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:30px;
+    text-align: center;
+    color:rgb(91, 89, 87);
+    line-height: 1.2;
+}
+
+.formTitulo img{
+    width: 100px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.baseForm{
+    width: 100%;
+}
+
+.formularios{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid white;
+    margin-bottom: 37px;
+}
+
+.input{
+    font-size: 15px;
+    color: white;
+    line-height: 1.2;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.focusInput{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: rgb(139, 119, 119);
+}
+
+.focusInput::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    background: -webkit-linear-gradient(to left, rgb(33, 20, 1), rgb(25, 18, 0), rgb(192, 193, 190));
+    background: -o-linear-gradient(to left, rgb(155, 154, 152), rgb(179, 177, 174), rgb(39, 20, 1));
+    background: -moz-linear-gradient(to left, rgb(56, 33, 1), rgb(215, 212, 209), rgba(139, 138, 137, 0.521));
+    background: linear-gradient(to left, rgba(86, 50, 11, 0.777), rgba(239, 237, 233, 0.845), rgba(86, 50, 11, 0.777));
+}
+
+.focusInput::after{
+    font-size: 15px;
+    color:  rgba(243, 241, 231, 0.279);
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding-left: 5px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+.input:focus + .focusInput::after{
+    top: -20px;
+}
+
+.has-value + .focusInput::after{
+    top: -20px;
+}
+
+.input:focus + .focusInput::before{
+    width: 100%;
+}
+
+.hasValue + .focusInput::before{
+    width: 100%;
+}
+
+
+
+.containerFormulariosBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.formulariosBtn{
+    font-size: 10px;
+    text-transform: 700;
+    border: none;
+    border-radius: 7px;
+    /*background-color:rgb(121, 110, 110);*/
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 24px;
-    margin-top:50px;
+    width: 90px;
+    height: 50px;
     color: rgb(144, 114, 84);
-    background-color: rgb(41, 31, 19);
-    border:solid rgba(216, 206, 206, 0.38);
+    background-color: rgba(41, 31, 19, 0.914);
+    border:solid rgba(128, 128, 128, 0.38);
     border-radius:8px;
     font-size: 0.8rem;
     transition: .7s;
     cursor: pointer;
-    display:inline;
-  
-}
-.cards{
-    background:rgba(195, 171, 151, 0.576);
+    
 }
 
-/* 
-a partir daqui
- */
- .cards{
-    display: flex;
-    width: 1040px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.formulariosBtn:hover{
+    cursor: pointer;
+}
+
+.textoCentro{
+    display:flex;
     justify-content: center;
- }
+    align-items: center;
+    margin-top: 50px;
+}
 
- .divcards{
-   margin: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 300px;
-  
- }
+.texto1{
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
 
- .cardbody{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 250px;
-    border: 2px solid rgb(123, 128, 46);
- }
-
-.image{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.texto2{
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
 }
