@@ -33,37 +33,37 @@ function VendasPost() {
                 <div className={styles.cardBodypost}>
                     <form onSubmit={handleSubmit(registroVenda)}>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Tipo:</label>
                             <input type="text" name="TIPO" {...register("TIPO")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Valor:</label>
                             <input type="text" name="VALOR" {...register("VALOR")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Endereço</label>
                             <input type="text" name="ENDEREÇO" {...register("ENDEREÇO")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Quartos:</label>
                             <input type="number" name="QUARTOS" {...register("QUARTOS")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Banheiros:</label>
                             <input type="number" name="BANHEIROS" {...register("BANHEIROS")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Garagem:</label>
                             <input type="number" name="GARAGEM" {...register("GARAGEM")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={styles.formularios}>
                             <label>Tamanho:</label>
                             <input type="text" name="TAMANHO" {...register("TAMANHO")}></input>
                         </div>

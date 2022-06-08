@@ -21,10 +21,18 @@ const Cabecalho = () => {
           
           <ul className={`${styles.navMenu} ${click &&styles.active}`}>
 
-              <Link to={'/'}><li><a href='#'>Home</a></li></Link>
-              <li><a href='#'>Cadastro</a></li>
-              <li><a href='#'>Sobre</a></li>
-              <li><a href='#'>Contato</a></li>
+              <Link to={'/'}>
+                <li><a href='#'>Home</a></li>
+              </Link>
+              <Link to={'/Cadastro'}>
+                <li><a href='#'>Cadastro</a></li>
+              </Link>
+              <Link to={'/Sobre'}>
+                <li><a href='#'>Sobre</a></li>
+              </Link>
+              <Link to={'/Corretor'}>
+                <li><a href='#'>Contato</a></li>
+                </Link>
 
           </ul>
           <div className={styles.ElTracitos} onClick={handleClick}>

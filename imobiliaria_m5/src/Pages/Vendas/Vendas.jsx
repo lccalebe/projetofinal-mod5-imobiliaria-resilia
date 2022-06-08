@@ -3,7 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
-import styles from './VendasPost.module.css'
+import styles from './Vendas.module.css'
 
 
 function Vendas() {
@@ -32,7 +32,7 @@ function Vendas() {
             <Cabecalho />
 
             <main>
-                <div className={styles.cards}>
+                <div className={styles.container}>
 
                     {vendas.map((vendas, key) => {
                         return (
@@ -56,13 +56,13 @@ function Vendas() {
                                     
                                     <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
                                         <div className={styles.btnEdit}>
-                                            <button>Edit</button>
+                                            <button className={styles.btnForm}>Edit</button>
                                         </div>
                                     </Link>
                                         
 
                                     <div className={styles.btnDelete}>
-                                        <button onClick={() => {deleteVenda(vendas.ID)} }>Delete</button>
+                                        <button className={styles.btnForm} onClick={() => {deleteVenda(vendas.ID)} }>Delete</button>
                                     </div>
 
                             </div>

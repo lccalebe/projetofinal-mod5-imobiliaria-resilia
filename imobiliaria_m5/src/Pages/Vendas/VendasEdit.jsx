@@ -4,7 +4,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from "../../Components/rodape/Rodape";
-import styles from './VendasPost.module.css'
+import Styles from './VendasEdit.module.css'
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 function VendasEdit() {
 
@@ -27,57 +28,65 @@ function VendasEdit() {
     return (
         <div>
             <Cabecalho />
+        
+            <div className={Styles.container}>
 
-            <div className={styles.cardPost}>
+                
+                <div className={Styles.containerInicio}>
 
-                <h1>Criar novo registro de venda</h1>
-                <div className={styles.linePost}></div>
+                <div>
+                <div className={Styles.titulo}> 
+                <span className={Styles.formTitulo}>Criar novo registro de venda
+                <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
+                </span>
+                </div>
+                
+                    <form className={Styles.baseForm} onSubmit={handleSubmit(registroVenda)}>
 
-                <div className={styles.cardBodyPost}>
-                    <form onSubmit={handleSubmit(registroVenda)}>
-
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Tipo</label>
-                            <input type="text" name="TIPO" {...register("TIPO")}></input>
+                            <input className={Styles.input} type="text" name="TIPO" {...register("TIPO")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Valor</label>
-                            <input type="text" name="VALOR" {...register("VALOR")}></input>
+                            <input className={Styles.input} type="text" name="VALOR" {...register("VALOR")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Endereço</label>
-                            <input type="text" name="ENDEREÇO" {...register("ENDEREÇO")}></input>
+                            <input  className={Styles.input} type="text" name="ENDEREÇO" {...register("ENDEREÇO")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Quartos</label>
-                            <input type="number" name="QUARTOS" {...register("QUARTOS")}></input>
+                            <input  className={Styles.input} type="number"  name="QUARTOS" {...register("QUARTOS")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Banheiros</label>
-                            <input type="number" name="BANHEIROS" {...register("BANHEIROS")}></input>
+                            <input  className={Styles.input} type="number"  name="BANHEIROS" {...register("BANHEIROS")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Garagem</label>
-                            <input type="number" name="GARAGEM" {...register("GARAGEM")}></input>
+                            <input  className={Styles.input}
+                            type="number"   name="GARAGEM" {...register("GARAGEM")}></input>
                         </div>
 
-                        <div className={styles.fields}>
+                        <div className={Styles.formularios}>
                             <label>Tamanho</label>
-                            <input type="text" name="TAMANHO" {...register("TAMANHO")}></input>
+                            <input  className={Styles.input}
+                            type="text" name="TAMANHO" {...register("TAMANHO")}></input>
                         </div>
 
-                        <div className={styles.btnPost}>
-                            <button className={styles.btnForm} type="submit">Registrar</button>
+                        <div className={Styles.containerFormulariosBtn}>
+                            <button className={Styles.formulariosBtn} type="submit">Registrar</button>
                         </div>
 
                     </form>
                 </div>
-
+                </div>
             </div>
 
             <Rodape />
