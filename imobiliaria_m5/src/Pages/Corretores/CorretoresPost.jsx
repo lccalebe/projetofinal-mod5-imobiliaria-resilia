@@ -53,7 +53,7 @@ function CorretoresPost() {
                         </div>
 
                         <div className="fields">
-                            <label>Comição por Venda</label>
+                            <label>Comissão por Venda</label>
                             <input type="number" name="COMICAOPORVENDA" {...register("COMICAOPORVENDA")}></input>
                         </div>
                         
