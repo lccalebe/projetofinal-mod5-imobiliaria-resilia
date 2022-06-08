@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     padding: 2rem 0;
-    background:rgba(195, 171, 151, 0.569);
+    background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
 }
 
 .footer .container {
@@ -33,7 +33,7 @@
 .footer .icon {
     font-size: 2rem;
     margin: 2rem 3rem;
-    color: #5651e5;
+    color: rgb(41, 31, 19);
 }
 
 @media screen and (max-width: 940px) {

@@ -15,9 +15,9 @@ const FiltroHeader = () => {
            <input type='text' placeholder= 'Enter Keyword..' />
          </div>
          <div className={styles.radio}>
-           <input type='radio' checked />
+           <input type='radio' name='Input_Radio'/>
            <label>Compra</label>
-           <input type='radio' checked />
+           <input type='radio' name='Input_Radio' />
            <label>Aluguel</label>
            <button type='submit'>
              <AiOutlineSearch className={styles.icon} />
@@ -28,9 +28,15 @@ const FiltroHeader = () => {
 
         </form>
         <div>
+<<<<<<< HEAD
           <Link to={'/login'}>
             <button className={styles.btn}>Sign In</button>
           </Link>
+=======
+        
+        <button className={styles.btn}>Sign In</button>
+        
+>>>>>>> 93b3be2db5d46ae371d822a0d85bbed11eda7a7c
         </div>
       </div>
     </div>

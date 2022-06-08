@@ -13,21 +13,32 @@ const Opcao = () => {
     <div className={styles.opcao}>
         <h1> A melhor moradia para você aqui</h1>
         <div>
-         <p>
-            <span className={styles.negrito}>Ver mais</span>
-         </p>
-         <p>Comercial</p>
-         <p>Residencial</p>
-         <p>Aluguel</p>
+      
         </div>
         <div className={styles.container}>
            {/*  <img src={} alt='' />
             <img src={} alt='' />
             <img src={} alt='' /> */}
         </div>
+<<<<<<< HEAD
         <Link to={'/adm'}>
         <button className={styles.btn2}>View All</button>
+=======
+        
+        <Link to={'/vendas'}>
+        <button className={styles.btn2}>Á Venda</button>
+>>>>>>> 93b3be2db5d46ae371d822a0d85bbed11eda7a7c
         </Link>
+        <Link to={'/Aluguel'}>
+        <button className={styles.btn2}>Aluguel</button>
+        </Link>
+        <Link to={'/Corretores'}>
+        <button className={styles.btn2}>Corretores</button>
+        </Link>
+        <Link to={'/Adm'}>
+        <button className={styles.btn2}>Adm</button>
+        </Link>
+        
     </div>
     
   )

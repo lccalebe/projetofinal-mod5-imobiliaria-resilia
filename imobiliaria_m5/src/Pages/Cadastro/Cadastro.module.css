@@ -86,10 +86,10 @@
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
-    background: -webkit-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: -o-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: -moz-linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
-    background: linear-gradient(to left, rgb(236, 221, 4), rgb(175, 223, 65), rgb(122, 143, 74));
+    background: -webkit-linear-gradient(to left, rgb(33, 20, 1), rgb(25, 18, 0), rgb(192, 193, 190));
+    background: -o-linear-gradient(to left, rgb(155, 154, 152), rgb(179, 177, 174), rgb(39, 20, 1));
+    background: -moz-linear-gradient(to left, rgb(56, 33, 1), rgb(215, 212, 209), rgba(139, 138, 137, 0.521));
+    background: linear-gradient(to left, rgba(86, 50, 11, 0.777), rgba(239, 237, 233, 0.845), rgba(86, 50, 11, 0.777));
 }
 
 .focusInput::after{
@@ -139,7 +139,6 @@
 
 .formulariosBtn{
     font-size: 15px;
-    color: rgba(91, 89, 87, 0.812);
     text-transform: 700;
    
     border: none;
@@ -152,7 +151,14 @@
     align-items: center;
     width: 90px;
     height: 50px;
-    background-image: linear-gradient(to right, #9b7c4a, #a98961, #b59878, #c0a690, #cab6a7, #cab6a7, #cab6a7, #cab6a7, #c0a690, #b59878, #a98961, #9b7c4a);
+    color: rgb(144, 114, 84);
+    background-color: rgba(41, 31, 19, 0.914);
+    border:solid rgba(128, 128, 128, 0.38);
+    border-radius:8px;
+    font-size: 0.8rem;
+    transition: .7s;
+    cursor: pointer;
+    
 }
 
 .formulariosBtn:hover{
