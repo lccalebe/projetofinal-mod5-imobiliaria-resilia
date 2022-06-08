@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+body {
+    background:rgba(195, 171, 151, 0.576); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;   
+}
+
+.titulo{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(165, 165, 105);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+}
+  
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.eliane{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 141, 91);
+    text-align: center;
+    padding: 5%;
+}
+
+.elianeImg img{
+    width: 190px;
+    height: 190px;
+}
+
+.jocelia{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 141, 91);
+    text-align: center;
+    padding: 5%;
+}
+
+.joceliaImg img{
+    width: 150px;
+    height: 190px;
+}
+
+.luciana{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 141, 91);
+    text-align: center;
+    padding: 5%;
+}
+
+.lucianaImg img{
+    width: 150px;
+    height: 190px;
+}
+
+.lucas{
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 141, 91);
+    text-align: center;
+    padding: 5%;
+}
+
+.lucasImg img{
+    width: 180px;
+    height: 190px;
+}
+
+.raphael{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 141, 91);
+    text-align: center;
+    padding: 5%;
+}
+
+.raphaelImg img{
+    width: 150px;
+    height: 190px;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}

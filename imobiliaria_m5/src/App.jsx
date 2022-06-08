@@ -6,6 +6,7 @@ import Featured from './Components/Featured/Featured'
 import Rodape from './Components/rodape/Rodape'
 import styles from './App.module.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,6 +17,10 @@ function App() {
       <Opcao />
       <Featured />
       <Rodape />
+      <Cadastro/>
+      <Login/>
+
+    
     </div>
   )
 }
