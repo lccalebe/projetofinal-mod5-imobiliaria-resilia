@@ -57,13 +57,9 @@ const Cadastro = () => {
                     {/*Mudar para Login*/}
                 <div className={Styles.textoCentro}>
                     <span className={Styles.texto1}>Já possui cadastro?</span>
-<<<<<<< HEAD:imobiliaria_m5/src/Components/Cadastro/Cadastro.jsx
-                    <Link className={Styles.texto2} to={'/Login'}>Faça seu login!</Link>
-=======
                     <Link to={'/login'}>
                     <p className={Styles.texto2} >Faça seu login!</p>
                     </Link>
->>>>>>> dc531c739d36ea7eab44752a88b876062774c8f9:imobiliaria_m5/src/Pages/Cadastro/Cadastro.jsx
                 </div>
 
             </div>

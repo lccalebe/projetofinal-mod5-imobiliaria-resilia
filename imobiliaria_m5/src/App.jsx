@@ -16,11 +16,7 @@ function App() {
       <FiltroHeader />
       <Opcao />
       <Featured />
-      <Rodape />
-      <Cadastro/>
-      <Login/>
-
-    
+      <Rodape />    
     </div>
   )
 }
