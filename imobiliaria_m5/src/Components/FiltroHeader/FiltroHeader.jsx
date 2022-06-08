@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import styles from './FiltroHeader.module.css'
 // por valor maximo pra ficar estatico max-width
 
@@ -27,7 +28,9 @@ const FiltroHeader = () => {
 
         </form>
         <div>
-        <button className={styles.btn}>Sign In</button>
+          <Link to={'/login'}>
+            <button className={styles.btn}>Sign In</button>
+          </Link>
         </div>
       </div>
     </div>

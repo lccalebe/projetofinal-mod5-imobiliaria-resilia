@@ -1,6 +1,42 @@
 ### PROJETO MODULO 5 - GRUPO 3
 ## IMOBILIÁRIA RESILIA :house:
 
+## Instalação
+    - Para a instalação das dependencias do projeto, apois fazer o clone do projeto com o comando:
+    - git clone (url do projeto)
+    - Digitar no terminal
+    - npm install
+    - Aguarde as dependencias serem instaladas.
+
+## Execução
+    - Após todas as dependencias instaladas
+    - Para começar a execução do projeto rodar no terminal:
+    - npm run dev
+
+## Endpoints
+    - A API utiliza nesse projeto foi 
+    - https://imobiliariaresilia.herokuapp.com/
+    - Essa API foi criada pela mesma equipe que fez esse projeto.
+    
+    - Os endpoints que existem nesse protejo são:
+    - "/"
+    - "/login"
+    - "/cadastro"
+    - "/vendas"
+      - "/vendasPost"
+      - "/vendasEdit"
+    - "/aluguel"
+      - "/aluguelPost"
+      - "/aluguelPost"
+    - "/cliente"
+      - "/clientePost"
+      - "/clientePost"
+    - "/corretores"
+      - "/corretoresPost"
+      - "/corretoresPost"
+    - "/adm"
+      - "/admPost"
+      - "/admPost"
 
 <div align="center">
 
