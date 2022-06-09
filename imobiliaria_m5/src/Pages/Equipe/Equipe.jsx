@@ -1,16 +1,20 @@
 import React from 'react'
-
-import Styles from './Corretor.module.css'
+import Styles from './Equipe.module.css'
 import jocelia from '../../assets/jocelia.jpg'
 import eliane from '../../assets/eliane.jpg'
 import luciana from '../../assets/luciana.jpg'
 import lucas from '../../assets/lucas.jpg'
 import raphael from '../../assets/raphael.jpg'
+import Cabecalho from '../../Components/Cabecalho/Cabecalho'
+import Rodape from "../../Components/rodape/Rodape"
 
-export const Corretor = () => {
+export const Equipe = () => {
       
   return (
-      <div>
+    <div>
+          
+        <Cabecalho />
+
         <div className={Styles.titulo}>Nossa equipe</div>
         <div className={Styles.time}> 
 
@@ -90,7 +94,12 @@ export const Corretor = () => {
             </div>
 
         </div> 
+
+        <Rodape />
+
     </div>
  
   )
 }
+
+export default Equipe;

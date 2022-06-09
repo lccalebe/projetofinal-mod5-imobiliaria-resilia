@@ -30,7 +30,7 @@ const Cabecalho = () => {
               <Link to={'/sobre'}>
                 <li><a href='#'>Sobre</a></li>
               </Link>
-              <Link to={'/corretores'}>
+              <Link to={'/equipe'}>
                 <li><a href='#'>Contato</a></li>
                 </Link>
 
