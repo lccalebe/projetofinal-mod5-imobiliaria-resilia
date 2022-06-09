@@ -59,3 +59,5 @@ export const Sobre = () => {
     </div>
   )
 }
+
+export default Sobre;

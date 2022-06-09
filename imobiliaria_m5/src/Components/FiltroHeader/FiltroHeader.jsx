@@ -13,15 +13,17 @@ const FiltroHeader = () => {
         <form className={styles.procurar}>
           <div>
            <input type='text' placeholder= 'Enter Keyword..' />
-         </div>
-         <div className={styles.radio}>
-           <input type='radio' name='Input_Radio'/>
-           <label>Compra</label>
-           <input type='radio' name='Input_Radio' />
-           <label>Aluguel</label>
-           <button type='submit'>
-             <AiOutlineSearch className={styles.icon} />
-             </button>
+          </div>
+          <div className={styles.radio}>
+            <input type='radio' name='Input_Radio' checked/>
+            <label>Compra</label>
+            <input type='radio' name='Input_Radio' />
+            <label>Aluguel</label>
+            <Link to={"/vendas"}>
+              <button type='submit'>
+                <AiOutlineSearch className={styles.icon} />
+              </button>
+            </Link>
 
          </div>
 

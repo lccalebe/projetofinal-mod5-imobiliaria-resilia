@@ -24,13 +24,13 @@ const Cabecalho = () => {
               <Link to={'/'}>
                 <li><a href='#'>Home</a></li>
               </Link>
-              <Link to={'/Cadastro'}>
+              <Link to={'/cadastro'}>
                 <li><a href='#'>Cadastro</a></li>
               </Link>
-              <Link to={'/Sobre'}>
+              <Link to={'/sobre'}>
                 <li><a href='#'>Sobre</a></li>
               </Link>
-              <Link to={'/Corretores'}>
+              <Link to={'/corretores'}>
                 <li><a href='#'>Contato</a></li>
                 </Link>
 
