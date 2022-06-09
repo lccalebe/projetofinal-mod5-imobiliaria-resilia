@@ -22,6 +22,7 @@
     - "/"
     - "/login"
     - "/cadastro"
+    - "/sobre"
     - "/vendas"
       - "/vendasPost"
       - "/vendasEdit"
