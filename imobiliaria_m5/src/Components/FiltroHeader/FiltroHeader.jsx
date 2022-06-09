@@ -8,8 +8,8 @@ const FiltroHeader = () => {
   return (
     <div className={styles.filtroHeader}>
       <div className={styles.content}>
-        <h1 className={styles.titulon}>Ache o lugar perfeito para você</h1>
-        <p className={styles.findText}>Search the lagest selection of luxury high-rise apartaments, multi-family homes, and luxury homes</p>
+        <h1 className={styles.titulon}>Encontre a moradia dos seus sonhos</h1>
+        <p className={styles.findText}>Pesquise aqui a melhor opção para você</p>
         <form className={styles.procurar}>
           <div>
            <input type='text' placeholder= 'Enter Keyword..' />
