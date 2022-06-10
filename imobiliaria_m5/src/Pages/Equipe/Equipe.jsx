@@ -11,7 +11,7 @@ import Rodape from "../../Components/rodape/Rodape"
 export const Equipe = () => {
       
   return (
-    <div>
+    <div className={Styles.container}>
           
         <Cabecalho />
 

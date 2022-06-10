@@ -4,7 +4,7 @@
     padding:0;
   }
   
-body {
+.container {
     background:rgba(195, 171, 151, 0.576); 
     display: flex;
     flex-direction: row;
