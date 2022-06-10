@@ -3,36 +3,38 @@
   margin:0;
   padding:0;
 }
-
-body {
-    background:rgba(195, 171, 151, 0.576);    
-}
-
 .sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background:rgba(195, 171, 151, 0.576);
+    
 }
 
 .titulo{
     font-size: 45px;
-    color: rgb(165, 165, 105);
+    color: rgb(135,79,42);
     font-family: 'Times New Roman', Times, serif;
-    padding: 4%;
+    padding: 30px;
+    
+    
 }
 
 .topicos{
-    width: 80%;
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: 120%;
+    border: 2px solid rgba(255, 255, 255, 0.928);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    color: rgb(141, 141, 91);
+    color: rgb(135,79,42);
     text-align: center;
+    margin-bottom:4%;
+    padding: 2%;
+    
 }
 
 
@@ -40,6 +42,7 @@ body {
 .lista{
     list-style-type:disc;
     margin-left: 5%;
+    
 }
 
 .somos{
@@ -53,6 +56,8 @@ body {
     font-size: 15px;
     text-align: left;
     margin-left: 20px;
+    margin: 12px;
+    color: rgb(42, 21, 1);
 }
 
 .listaDeValores{

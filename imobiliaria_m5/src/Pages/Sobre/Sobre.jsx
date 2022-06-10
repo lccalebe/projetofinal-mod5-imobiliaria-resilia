@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Styles from './Sobre.module.css';
+import Cabecalho from "../../Components/Cabecalho/Cabecalho"
+import Rodape from "../../Components/rodape/Rodape"
 
 export const Sobre = () => {
 
   return (
     <div className={Styles.sobre}>
+        <Cabecalho />
         < div className={Styles.titulo}>
             É sobre...
         </div>
@@ -56,6 +59,7 @@ export const Sobre = () => {
             </ul>
                     
         </section>
+        <Rodape />
     </div>
   )
 }
