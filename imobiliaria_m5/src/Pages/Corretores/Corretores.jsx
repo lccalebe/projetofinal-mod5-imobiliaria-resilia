@@ -3,6 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
+import styles from './Corretores.module.css'
 
 
 function Corretores() {
@@ -31,11 +32,11 @@ function Corretores() {
             <Cabecalho />
 
             <main>
-                <div className="cards">
+                <div className={styles.container}>
 
                     {corretores.map((corretores, key) => {
                         return (
-                            <div className='card'>
+                            <div className={styles.card}>
 
                                 <header>
                                     <h2>{corretores.NOME}</h2>                            
@@ -47,30 +48,33 @@ function Corretores() {
                                 <p>Comição por Venda: {corretores.COMICAOPORVENDA}</p>
                                 {/*<img src={corretores.IMG1} alt=''/>*/}
 
-                                <div className='btns'>
+                                <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/corretoresEdit/${corretores.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={styles.btnDelete}>
                                         <button onClick={() => {deleteCorretor(corretores.ID)} }>Delete</button>
                                     </div>
 
                             </div>
-                        </div> 
+                            
+                        </div>
+                         
                         )
                     })}
-                    
+                     <Link to={'/corretoresPost'}>
+                      <button>Registrar Novo Corretor</button>
+                     </Link>
                 </div>
+                
             </main>
 
-            <Link to={'/corretoresPost'}>
-                <button>Registrar Novo Corretor</button>
-            </Link>
+           
 
             <Rodape />
         </div>

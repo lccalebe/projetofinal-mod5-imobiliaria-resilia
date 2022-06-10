@@ -9,9 +9,10 @@
     min-height: 100vh;
     padding: 15px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background:rgba(195, 171, 151, 0.576);
 }
 
 .containerInicio{
@@ -25,6 +26,8 @@
 }
 .titulo{
     padding:30px;
+    margin:30px;
+
 
 }
 .formTitulo{
@@ -35,25 +38,26 @@
     border-radius: 7%;
     overflow: hidden;
     padding: 40px 60px 40px 60px;
+    
 }
 
 .btnForm{
    
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
-    margin-top:10px;
     color: rgb(144, 114, 84);
     background-color: rgb(41, 31, 19);
-    border:solid rgba(216, 206, 206, 0.38);
+    width:80%;
+    display:flex;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    margin-top:10px;
+    border:solid rgba(128, 128, 128, 0.38);
     border-radius:8px;
     font-size: 0.8rem;
     transition: .7s;
     cursor: pointer;
-    
-  
-  
+    display:inline;
   
 } 
 .Btns{
@@ -78,8 +82,11 @@
     size-adjust: 100px;
     padding-right: 10px;
     justify-content: space-between;
-    border: solid;
+    border: hidden;
+    border-radius: 10px 20px 20px 20px;
+    margin-top:1%;
 }
+
 
 .bee{
     width:50%

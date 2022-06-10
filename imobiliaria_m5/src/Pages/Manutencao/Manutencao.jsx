@@ -3,7 +3,7 @@ import Styles from '../Cadastro/Cadastro.module.css';
 import Cabecalho from '../../Components/Cabecalho/Cabecalho';
 import Rodape from '../../Components/rodape/Rodape';
 import { Link } from 'react-router-dom';
-import Sobre from '../../Components/Sobre/Sobre';
+import Sobre from '../Sobre/Sobre';
 
 
 const Manutencao = () => {

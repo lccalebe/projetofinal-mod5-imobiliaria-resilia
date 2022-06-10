@@ -27,7 +27,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+button{
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  margin-top:10px;
+  color: rgb(144, 114, 84);
+  background-color: rgb(41, 31, 19);
+  border:solid rgba(216, 206, 206, 0.38);
+  border-radius:8px;
+  font-size: 0.8rem;
+  transition: .7s;
+  cursor: pointer;
+}
 .container{
   max-width:1240px;
   margin:auto;

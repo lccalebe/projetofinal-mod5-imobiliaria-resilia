@@ -23,8 +23,7 @@
     border-radius: 7%;
     overflow: hidden;
     padding: 40px 60px 40px 60px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 30px;
 }
 
 .containerInicioLogin{
@@ -108,7 +107,7 @@
 
 .focusInput::after{
     font-size: 15px;
-    color:  rgba(243, 241, 231, 0.279);
+    color:  rgb(41, 29, 4);
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;
@@ -128,6 +127,7 @@
 
 .input:focus + .focusInput::after{
     top: -20px;
+    
 }
 
 .has-value + .focusInput::after{

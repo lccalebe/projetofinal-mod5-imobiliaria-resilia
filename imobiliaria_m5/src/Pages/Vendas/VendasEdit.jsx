@@ -7,6 +7,7 @@ import Rodape from "../../Components/rodape/Rodape";
 import Styles from './VendasEdit.module.css'
 import BeeImoveis from'../../assets/BeeImoveis.png'
 
+
 function VendasEdit() {
 
     const { id } = useParams();
@@ -28,15 +29,15 @@ function VendasEdit() {
     return (
         <div>
             <Cabecalho />
-        
+
             <div className={Styles.container}>
 
-                
+                <h1 className={Styles.titulo}>Criar novo registro de venda</h1>
                 <div className={Styles.containerInicio}>
 
                 <div>
                 <div className={Styles.titulo}> 
-                <span className={Styles.formTitulo}>Criar novo registro de venda
+                <span className={Styles.formTitulo}>
                 <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
                 </span>
                 </div>
@@ -45,7 +46,7 @@ function VendasEdit() {
 
                         <div className={Styles.formularios}>
                             <label>Tipo</label>
-                            <input className={Styles.input} type="text" name="TIPO" {...register("TIPO")}></input>
+                            <input className={Styles.input} type="text"  name="TIPO" {...register("TIPO")}></input>
                         </div>
 
                         <div className={Styles.formularios}>
@@ -81,7 +82,7 @@ function VendasEdit() {
                         </div>
 
                         <div className={Styles.containerFormulariosBtn}>
-                            <button className={Styles.formulariosBtn} type="submit">Registrar</button>
+                            <button className={Styles.btnform} type="submit">Registrar</button>
                         </div>
 
                     </form>

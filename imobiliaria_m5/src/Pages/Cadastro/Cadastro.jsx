@@ -17,8 +17,7 @@ const Cadastro = () => {
     const [senha, setSenha] = useState("")
 
   return (
-        <section className={Styles.container}>
-
+        <div className={Styles.container}>
             <Cabecalho />
 
             <div className={Styles.containerInicio}>
@@ -106,8 +105,7 @@ const Cadastro = () => {
             </div>
             
             <Rodape />
-        
-        </section>
+        </div>
     )
 }
 
