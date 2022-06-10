@@ -14,7 +14,7 @@ const Login = () => {
     return (
         <section className={Styles.container}>
             <Cabecalho />
-            <div className={Styles.containerInicio}>
+            <div className={Styles.containerInicioLogin}>
             
                 {/*Titulo e imagem*/}
                 <div className={Styles.titulo}> 
