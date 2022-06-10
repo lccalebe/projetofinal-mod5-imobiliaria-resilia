@@ -44,7 +44,7 @@ const Login = () => {
                 
                     {/*forms-botão*/}
                     <div className={Styles.containerFormulariosBtn}>
-                        <button className={Styles.formulariosBtn}>Entrar</button>
+                        <Link to={'/cliente'}><button className={Styles.formulariosBtn}>Entrar</button></Link>
                     </div>
                 </form>
 

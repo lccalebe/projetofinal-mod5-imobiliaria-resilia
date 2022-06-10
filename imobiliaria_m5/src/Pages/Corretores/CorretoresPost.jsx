@@ -16,8 +16,9 @@ function CorretoresPost() {
         console.log("Deu Certo")
         history('/corretores')
     })
-    .catch(() => {
+    .catch((err) => {
         console.log("Deu errado")
+        console.log(err)
     })
 
     return (

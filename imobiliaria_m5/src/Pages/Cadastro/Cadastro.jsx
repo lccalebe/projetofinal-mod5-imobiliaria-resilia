@@ -18,7 +18,9 @@ const Cadastro = () => {
 
   return (
         <section className={Styles.container}>
+
             <Cabecalho />
+
             <div className={Styles.containerInicio}>
             
                 {/*Titulo e imagem*/}
@@ -102,6 +104,7 @@ const Cadastro = () => {
                 </div>
 
             </div>
+            
             <Rodape />
         
         </section>

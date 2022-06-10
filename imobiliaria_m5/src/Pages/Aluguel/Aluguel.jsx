@@ -47,12 +47,7 @@ function Aluguel() {
                                 <p>ID Corretor: {aluguel.CORRETORID}</p>
                                 <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
                                 <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-<<<<<<< HEAD
-                                <img src={aluguel.IMG1} alt=''/>
-                                <img src={aluguel.IMG2} alt=''/>
-=======
                                 <img className={styles.image} src={aluguel.IMG1} alt=''/>
->>>>>>> f8c03cbde3a4f024412f5ea4ad7fc254bea912dd
 
                                 <div className='btns'>
                                     

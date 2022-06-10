@@ -26,7 +26,7 @@ function ClientePost() {
 
             <div className="card-post">
 
-                <h1>Criar novo registro de venda</h1>
+                <h1>Criar novo registro de Cliente</h1>
                 <div className="line-post"></div>
 
                 <div className="card-body-post">
