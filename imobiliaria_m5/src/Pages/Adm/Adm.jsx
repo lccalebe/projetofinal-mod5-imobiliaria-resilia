@@ -3,6 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
+import styles from './Adm.module.css'
 
 
 function Adm() {
@@ -31,11 +32,11 @@ function Adm() {
             <Cabecalho />
 
             <main>
-                <div className="cards">
+                <div className={styles.container}>
 
                     {adm.map((adm, key) => {
                         return (
-                            <div className='card'>
+                            <div className={styles.card}>
 
                                 <header>
                                     <h2>{adm.TIPOPLANO}</h2>                            
@@ -46,30 +47,30 @@ function Adm() {
                                 <p>Seguro Incluso: {adm.SEGUROINCLUSO}</p>
                                 {/*<img src={adm.IMG1} alt=''/>*/}
 
-                                <div className='btns'>
+                                <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/admEdit/${adm.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={styles.btnDelete}>
                                         <button onClick={() => {deleteAdm(adm.ID)} }>Delete</button>
                                     </div>
 
                             </div>
+                            
                         </div> 
                         )
                     })}
-                    
-                </div>
-            </main>
-
-            <Link to={'/admPost'}>
+                    <Link to={'/admPost'}>
                 <button>Registrar Novo Plano</button>
             </Link>
+                </div>
+                
+            </main>
 
             <Rodape />
         </div>

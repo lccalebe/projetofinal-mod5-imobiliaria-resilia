@@ -32,11 +32,11 @@ function Cliente() {
             <Cabecalho />
 
             <main>
-                <div className="cards">
+                <div className={styles.container}>
 
                     {cliente.map((cliente, key) => {
                         return (
-                            <div className='card'>
+                            <div className={styles.card}>
 
                                 <header>
                                     <h2>{cliente.NOME}</h2>                            
@@ -51,16 +51,16 @@ function Cliente() {
                                 <p>Senha: {cliente.SENHA}</p>
                                 {/*<img src={cliente.IMG1} alt=''/>*/}
 
-                                <div className='btns'>
+                                <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/clienteEdit/${cliente.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={styles.btnDelete}>
                                         <button onClick={() => {deleteCliente(cliente.ID)} }>Delete</button>
                                     </div>
 

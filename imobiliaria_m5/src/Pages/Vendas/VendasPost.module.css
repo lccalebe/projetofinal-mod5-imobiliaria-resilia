@@ -8,6 +8,7 @@
     width: 100%;
     min-height: 100vh;
     background:rgba(195, 171, 151, 0.576);
+    color: rgb(91, 89, 87);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -15,14 +16,26 @@
 }
 
 .containerInicio{
-    margin: 40px;
-    width: 650px;
-    height: 1000px;
+    width: 750px;
+    height: 1050px;
     background-color: rgba(243, 241, 231, 0.279);
     border: 2px solid rgba(243, 241, 231, 0.279);
     border-radius: 7%;
     overflow: hidden;
     padding: 40px 60px 40px 60px;
+    margin: 30px;
+}
+
+.containerInicioLogin{
+    width: 550px;
+    height: 600px;
+    background-color: rgba(243, 241, 231, 0.279);
+    border: 2px solid rgba(243, 241, 231, 0.279);
+    border-radius: 7%;
+    overflow: hidden;
+    padding: 40px 60px 40px 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .titulo .formTitulo{
@@ -54,7 +67,7 @@
 
 .input{
     font-size: 15px;
-    color: white;
+    color: rgb(91, 89, 87);
     line-height: 1.2;
     border: none;
     display: block;
@@ -72,7 +85,7 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    color: rgb(139, 119, 119);
+    color: rgb(91, 89, 87);
 }
 
 .focusInput::before{
@@ -94,7 +107,7 @@
 
 .focusInput::after{
     font-size: 15px;
-    color:  rgba(243, 241, 231, 0.279);
+    color:  rgb(41, 29, 4);
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;
@@ -114,6 +127,7 @@
 
 .input:focus + .focusInput::after{
     top: -20px;
+    
 }
 
 .has-value + .focusInput::after{
@@ -138,8 +152,9 @@
 }
 
 .formulariosBtn{
-    font-size: 10px;
+    font-size: 15px;
     text-transform: 700;
+   
     border: none;
     border-radius: 7px;
     /*background-color:rgb(121, 110, 110);*/
@@ -148,14 +163,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: 50px;
-    color: rgb(144, 114, 84);
+    color: rgb(91, 89, 87);
     background-color: rgba(41, 31, 19, 0.914);
     border:solid rgba(128, 128, 128, 0.38);
     border-radius:8px;
     font-size: 0.8rem;
     transition: .7s;
     cursor: pointer;
+    
+}
 
+.formulariosBtn:hover{
+    cursor: pointer;
+}
+
+.textoCentro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.texto1{
+    font-size: 15px;
+    color: rgb(91, 89, 87);
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.texto2{
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
 }

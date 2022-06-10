@@ -41,17 +41,24 @@ function Vendas() {
                                 <header>
                                     <h2>{vendas.TIPO}</h2>                            
                                 </header>   
-                               <div className={styles.divcard}>
+                               
                                 <p>Valor: {vendas.VALOR}</p>
                                 <p>Endereço: {vendas.ENDEREÇO}</p>
                                 <p>Quartos: {vendas.QUARTOS}</p>
                                 <p>Banheiros: {vendas.BANHEIROS}</p>
                                 <p>Garagem: {vendas.GARAGEM}</p>
                                 <p>Tamanho: {vendas.TAMANHO}</p>
-                                </div>
+                                
+                                
+                                
                                 <img className={styles.image} src={vendas.IMG1} alt=''/>
+                                
+                               
                                 <img className={styles.image} src={vendas.IMG2} alt=''/>
+                                
+                                
                                 <img className={styles.image} src={vendas.IMG3} alt=''/>
+                               
                                 <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/vendasEdit/${vendas.ID}` }}>
@@ -69,13 +76,14 @@ function Vendas() {
                         </div> 
                         )
                     })}
-                    
-                </div>
-            </main>
-
-            <Link to={'/vendasPost'}>
+                       <Link to={'/vendasPost'}>
                 <button className={styles.btnForm}>Registrar Novo Imovel</button>
             </Link>
+                </div>
+                
+            </main>
+
+            
 
             <Rodape />
         </div>

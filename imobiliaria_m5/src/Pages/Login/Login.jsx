@@ -14,7 +14,7 @@ const Login = () => {
     return (
         <section className={Styles.container}>
             <Cabecalho />
-            <div className={Styles.containerInicio}>
+            <div className={Styles.containerInicioLogin}>
             
                 {/*Titulo e imagem*/}
                 <div className={Styles.titulo}> 
@@ -44,7 +44,7 @@ const Login = () => {
                 
                     {/*forms-botão*/}
                     <div className={Styles.containerFormulariosBtn}>
-                        <button className={Styles.formulariosBtn}>Entrar</button>
+                        <Link to={'/cliente'}><button className={Styles.formulariosBtn}>Entrar</button></Link>
                     </div>
                 </form>
 

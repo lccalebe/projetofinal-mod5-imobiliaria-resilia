@@ -4,6 +4,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
+import BeeImoveis from'../../assets/BeeImoveis.png'
+import Styles from './Adm.module.css'
 
 function AdmEdit() {
 
@@ -26,41 +28,48 @@ function AdmEdit() {
         <div>
             <Cabecalho />
 
-            <div className="card-post">
+            <div className={Styles.container}>
 
-                <h1>Criar novo registro ADM</h1>
-                <div className="line-post"></div>
+                <h1 className={Styles.titulo}>Criar novo registro ADM</h1>
+                <div className={Styles.containerInicio}>
 
-                <div className="card-body-post">
-                    <form onSubmit={handleSubmit(registroAdm)}>
+                <div>
+                <div className={Styles.titulo}> 
+                <span className={Styles.formTitulo}>
+                <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
+                </span>
+                </div>
 
-                        <div className="fields">
+                
+                    <form className={Styles.baseForm}  onSubmit={handleSubmit(registroAdm)}>
+
+                        <div className={Styles.formularios}>
                             <label>Tipo de Plano</label>
-                            <input type="text" name="TIPOPLANO" {...register("TIPOPLANO")}></input>
+                            <input  className={Styles.input} type="text" name="TIPOPLANO" {...register("TIPOPLANO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Tempo de contrato</label>
-                            <input type="number" name="TEMPOCONTRATO" {...register("TEMPOCONTRATO")}></input>
+                            <input  className={Styles.input} type="number" name="TEMPOCONTRATO" {...register("TEMPOCONTRATO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Taxa de Serviço</label>
-                            <input type="number" name="TAXASERVICO" {...register("TAXASERVICO")}></input>
+                            <input  className={Styles.input} type="number" name="TAXASERVICO" {...register("TAXASERVICO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Seguro Incluso</label>
-                            <input type="number" name="SEGUROINCLUSO" {...register("SEGUROINCLUSO")}></input>
+                            <input  className={Styles.input} type="number" name="SEGUROINCLUSO" {...register("SEGUROINCLUSO")}></input>
                         </div>
                         
-                        <div className="btn-post">
+                        <div >
                             <button type="submit">Registrar</button>
                         </div>
 
                     </form>
                 </div>
-
+                </div>
             </div>
 
             <Rodape />

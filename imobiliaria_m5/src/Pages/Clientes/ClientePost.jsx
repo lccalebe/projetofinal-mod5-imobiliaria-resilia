@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 function ClientePost() {
 
@@ -24,61 +25,66 @@ function ClientePost() {
         <div>
             <Cabecalho />
 
-            <div className="card-post">
+            <div className={Styles.container}>
 
-                <h1>Criar novo registro de venda</h1>
-                <div className="line-post"></div>
+                <h1 className={Styles.titulo}>Criar novo registro de Cliente</h1>
+                <div className={Styles.containerInicio}>
 
-                <div className="card-body-post">
-                    <form onSubmit={handleSubmit(registroCliente)}>
+                <div>
+                <div className={Styles.titulo}> 
+                <span className={Styles.formTitulo}>
+                <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
+                </span>
+                </div>
+                    <form className={Styles.baseForm} onSubmit={handleSubmit(registroCliente)}>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Nome</label>
-                            <input type="text" name="NOME" {...register("NOME")}></input>
+                            <input className={Styles.input} type="text" name="NOME" {...register("NOME")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>CPF</label>
-                            <input type="text" name="CPF" {...register("CPF")}></input>
+                            <input className={Styles.input} type="text" name="CPF" {...register("CPF")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Telefone</label>
-                            <input type="text" name="TELEFONE" {...register("TELEFONE")}></input>
+                            <input className={Styles.input} type="text" name="TELEFONE" {...register("TELEFONE")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Endereço</label>
-                            <input type="text" name="ENDERECO" {...register("ENDERECO")}></input>
+                            <input className={Styles.input} type="text" name="ENDERECO" {...register("ENDERECO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Tipo de Imovel</label>
-                            <input type="text" name="TIPO_DE_IMOVEL" {...register("TIPO_DE_IMOVEL")}></input>
+                            <input className={Styles.input} type="text" name="TIPO_DE_IMOVEL" {...register("TIPO_DE_IMOVEL")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Condição do Imovel</label>
-                            <input type="text" name="CONDICAO_DO_IMOVEL" {...register("CONDICAO_DO_IMOVEL")}></input>
+                            <input className={Styles.input} type="text" name="CONDICAO_DO_IMOVEL" {...register("CONDICAO_DO_IMOVEL")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>E-mail</label>
-                            <input type="text" name="EMAIL" {...register("EMAIL")}></input>
+                            <input className={Styles.input} type="text" name="EMAIL" {...register("EMAIL")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Senha</label>
-                            <input type="text" name="SENHA" {...register("SENHA")}></input>
+                            <input className={Styles.input} type="text" name="SENHA" {...register("SENHA")}></input>
                         </div>
 
-                        <div className="btn-post">
+                        <div>
                             <button type="submit">Registrar</button>
                         </div>
 
                     </form>
                 </div>
-
+                </div>
             </div>
 
             <Rodape />

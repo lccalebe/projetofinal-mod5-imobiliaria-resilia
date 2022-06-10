@@ -36,7 +36,7 @@ function Aluguel() {
 
                     {aluguel.map((aluguel, key) => {
                         return (
-                            <div className='card'>
+                            <div className={styles.card}>
 
                                 <header>
                                     <h2>{aluguel.ALUGUELTIPO}</h2>                            
@@ -49,16 +49,16 @@ function Aluguel() {
                                 <p>ID Inquilino: {aluguel.INQUILINOID}</p>
                                 <img className={styles.image} src={aluguel.IMG1} alt=''/>
 
-                                <div className='btns'>
+                                <div className={styles.Btns}>
                                     
                                     <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={styles.btnDelete}>
                                         <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
                                     </div>
 
@@ -66,13 +66,14 @@ function Aluguel() {
                         </div> 
                         )
                     })}
-                    
+
+                      <Link  to={'/aluguelPost'}>
+                        <button className={styles.btnRego}>Registrar Novo Imovel</button>
+                      </Link>
+
                 </div>
             </main>
 
-            <Link to={'/aluguelPost'}>
-                <button>Registrar Novo Imovel</button>
-            </Link>
 
             <Rodape />
         </div>

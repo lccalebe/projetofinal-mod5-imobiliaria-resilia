@@ -4,6 +4,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
+import Styles from './Aluguel.module.css'
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 function AluguelEdit() {
 
@@ -26,51 +28,58 @@ function AluguelEdit() {
         <div>
             <Cabecalho />
 
-            <div className="card-post">
+            <div className={Styles.container}>
 
-                <h1>Criar novo registro de venda</h1>
-                <div className="line-post"></div>
+                <h1 className={Styles.titulo}>Criar novo registro de venda</h1>
+                <div className={Styles.containerInicio}>
 
-                <div className="card-body-post">
-                    <form onSubmit={handleSubmit(registroAluguel)}>
+                <div>
+                <div className={Styles.titulo}> 
+                <span className={Styles.formTitulo}>
+                <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
+                </span>
+                </div>
 
-                        <div className="fields">
+                
+                    <form className={Styles.baseForm} onSubmit={handleSubmit(registroAluguel)}>
+
+                        <div className={Styles.formularios}>
                             <label>Tipo</label>
-                            <input type="text" name="AluguelTIPO" {...register("ALUGUELTIPO")}></input>
+                            <input className={Styles.input} type="text" name="AluguelTIPO" {...register("ALUGUELTIPO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Valor</label>
-                            <input type="text" name="VALOR" {...register("VALOR")}></input>
+                            <input className={Styles.input} type="text" name="VALOR" {...register("VALOR")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>Endereço</label>
-                            <input type="text" name="ENDERECO" {...register("ENDERECO")}></input>
+                            <input className={Styles.input} type="text" name="ENDERECO" {...register("ENDERECO")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>ID Corretor</label>
-                            <input type="number" name="CORRETORID" {...register("CORRETORID")}></input>
+                            <input className={Styles.input} type="number" name="CORRETORID" {...register("CORRETORID")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>ID Proprietario</label>
-                            <input type="number" name="PROPRIETARIOID" {...register("PROPRIETARIOID")}></input>
+                            <input className={Styles.input} type="number" name="PROPRIETARIOID" {...register("PROPRIETARIOID")}></input>
                         </div>
 
-                        <div className="fields">
+                        <div className={Styles.formularios}>
                             <label>ID Inquilino</label>
-                            <input type="number" name="INQUILINOID" {...register("INQUILINOID")}></input>
+                            <input className={Styles.input} type="number" name="INQUILINOID" {...register("INQUILINOID")}></input>
                         </div>
                         
-                        <div className="btn-post">
-                            <button type="submit">Registrar</button>
+                        <div className={Styles.containerFormulariosBtn}>
+                            <button className={Styles.btnForm} type="submit">Registrar</button>
                         </div>
 
                     </form>
                 </div>
-
+                </div>
             </div>
 
             <Rodape />

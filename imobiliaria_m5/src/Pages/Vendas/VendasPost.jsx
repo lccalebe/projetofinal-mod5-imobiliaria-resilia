@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
-import styles from './VendasPost.module.css'
+import Styles from './VendasPost.module.css'
+import BeeImoveis from'../../assets/BeeImoveis.png'
 
 function VendasPost() {
 
@@ -23,63 +24,71 @@ function VendasPost() {
 
     return (
         <div>
-            <Cabecalho />
-           {/* Aba de Registro de nova Venda */}
-            <div className={styles.cardPost}>
+        <Cabecalho />
 
-                <h1 className={styles.tituloRv}>Criar novo registro de venda</h1>
-                <div className={styles.linePost}></div>
+        <div className={Styles.container}>
 
-                <div className={styles.cardBodypost}>
-                    <form onSubmit={handleSubmit(registroVenda)}>
+            <h1 className={Styles.titulo1}>Criar novo registro de venda</h1>
+            <div className={Styles.containerInicio}>
 
-                        <div className={styles.formularios}>
-                            <label>Tipo:</label>
-                            <input type="text" name="TIPO" {...register("TIPO")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Valor:</label>
-                            <input type="text" name="VALOR" {...register("VALOR")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Endereço</label>
-                            <input type="text" name="ENDEREÇO" {...register("ENDEREÇO")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Quartos:</label>
-                            <input type="number" name="QUARTOS" {...register("QUARTOS")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Banheiros:</label>
-                            <input type="number" name="BANHEIROS" {...register("BANHEIROS")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Garagem:</label>
-                            <input type="number" name="GARAGEM" {...register("GARAGEM")}></input>
-                        </div>
-
-                        <div className={styles.formularios}>
-                            <label>Tamanho:</label>
-                            <input type="text" name="TAMANHO" {...register("TAMANHO")}></input>
-                        </div>
-
-                        <div className={styles.btnPost}>
-                            <button className={styles.btnForm} type="submit">Registrar</button>
-                        </div>
-
-                    </form>
-                </div>
-
+            <div>
+            <div className={Styles.titulo}> 
+            <span className={Styles.formTitulo}>
+            <img className={Styles.bee} src={BeeImoveis} alt="Casa com familia"/>
+            </span>
             </div>
+            
+                <form className={Styles.baseForm} onSubmit={handleSubmit(registroVenda)}>
 
-            <Rodape />
+                    <div className={Styles.formularios}>
+                        <label>Tipo</label>
+                        <input className={Styles.input} type="text"  name="TIPO" {...register("TIPO")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Valor</label>
+                        <input className={Styles.input} type="text" name="VALOR" {...register("VALOR")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Endereço</label>
+                        <input  className={Styles.input} type="text" name="ENDEREÇO" {...register("ENDEREÇO")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Quartos</label>
+                        <input  className={Styles.input} type="number"  name="QUARTOS" {...register("QUARTOS")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Banheiros</label>
+                        <input  className={Styles.input} type="number"  name="BANHEIROS" {...register("BANHEIROS")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Garagem</label>
+                        <input  className={Styles.input}
+                        type="number"   name="GARAGEM" {...register("GARAGEM")}></input>
+                    </div>
+
+                    <div className={Styles.formularios}>
+                        <label>Tamanho</label>
+                        <input  className={Styles.input}
+                        type="text" name="TAMANHO" {...register("TAMANHO")}></input>
+                    </div>
+
+                    <div className={Styles.containerFormulariosBtn}>
+                        <button className={Styles.formulariosBtn} type="submit">Registrar</button>
+                    </div>
+
+                </form>
+            </div>
+            </div>
         </div>
-    )
+
+        <Rodape />
+    </div>
+)
 }
 
 export default VendasPost;
