@@ -8,20 +8,24 @@ const FiltroHeader = () => {
   return (
     <div className={styles.filtroHeader}>
       <div className={styles.content}>
-        <h1 className={styles.titulon}>Ache o lugar perfeito para você</h1>
-        <p className={styles.findText}>Pesquise a maior seleção de apartamentos de luxo em arranha-céus, casas multifamiliares e casas de luxo</p>
+
+        <h1 className={styles.titulon}>Encontre a moradia dos seus sonhos</h1>
+        <p className={styles.findText}>Pesquise aqui a melhor opção para você</p>
+
         <form className={styles.procurar}>
           <div>
            <input type='text' placeholder= 'Enter Keyword..' />
-         </div>
-         <div className={styles.radio}>
-           <input type='radio' name='Input_Radio'/>
-           <label>Compra</label>
-           <input type='radio' name='Input_Radio' />
-           <label>Aluguel</label>
-           <button type='submit'>
-             <AiOutlineSearch className={styles.icon} />
-             </button>
+          </div>
+          <div className={styles.radio}>
+            <input type='radio' name='Input_Radio' checked/>
+            <label>Compra</label>
+            <input type='radio' name='Input_Radio' />
+            <label>Aluguel</label>
+            <Link to={"/vendas"}>
+              <button type='submit'>
+                <AiOutlineSearch className={styles.icon} />
+              </button>
+            </Link>
 
          </div>
 

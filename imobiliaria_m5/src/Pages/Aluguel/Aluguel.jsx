@@ -3,6 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
+import styles from './Aluguel.module.css'
 
 
 function Aluguel() {
@@ -31,7 +32,7 @@ function Aluguel() {
             <Cabecalho />
 
             <main>
-                <div className="cards">
+                <div className={styles.container}>
 
                     {aluguel.map((aluguel, key) => {
                         return (
@@ -46,7 +47,7 @@ function Aluguel() {
                                 <p>ID Corretor: {aluguel.CORRETORID}</p>
                                 <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
                                 <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-                                {/*<img src={aluguel.IMG1} alt=''/>*/}
+                                <img className={styles.image} src={aluguel.IMG1} alt=''/>
 
                                 <div className='btns'>
                                     
