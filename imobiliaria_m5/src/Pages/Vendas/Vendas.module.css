@@ -23,10 +23,12 @@
     overflow: hidden;
     padding: 40px 60px 40px 60px;
 }
+
 .titulo{
     padding:30px;
 
 }
+
 .formTitulo{
     width: 450px;
     height: 600px;
@@ -51,15 +53,11 @@
     font-size: 0.8rem;
     transition: .7s;
     cursor: pointer;
-    
-  
-  
-  
 } 
+
 .Btns{
   width:50%;  
 }
-
 
 .cards{
     z-index: -1;
@@ -72,8 +70,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.image{
 
+.image{
     width: 20%;
     size-adjust: 100px;
     padding-right: 10px;

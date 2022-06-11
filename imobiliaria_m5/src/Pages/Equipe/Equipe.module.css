@@ -2,14 +2,13 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-  }
+}
   
 .container {
     background:rgba(195, 171, 151, 0.576); 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;   
 }
@@ -23,15 +22,19 @@
 }
   
 .time{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3%;
 }
 
 .eliane{
+    width: 350px;
+    height: 350px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -40,15 +43,18 @@
     font-size: 20px;
     color: rgb(141, 141, 91);
     text-align: center;
-    padding: 5%;
+    margin: 3%;
+    padding: 3%;
 }
 
 .elianeImg img{
-    width: 190px;
-    height: 190px;
+    width: 75%;
+    height: 75%;
 }
 
 .jocelia{
+    width: 350px;
+    height: 350px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -57,15 +63,18 @@
     font-size: 20px;
     color: rgb(141, 141, 91);
     text-align: center;
-    padding: 5%;
+    margin: 3%;
+    padding: 3%;
 }
 
 .joceliaImg img{
-    width: 150px;
-    height: 190px;
+    width: 75%;
+    height: 75%;
 }
 
 .luciana{
+    width: 350px;
+    height: 350px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -74,16 +83,18 @@
     font-size: 20px;
     color: rgb(141, 141, 91);
     text-align: center;
-    padding: 5%;
+    margin: 3%;
+    padding: 3%;
 }
 
 .lucianaImg img{
-    width: 150px;
-    height: 190px;
+    width: 75%;
+    height: 75%;
 }
 
 .lucas{
-
+    width: 350px;
+    height: 350px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -92,15 +103,18 @@
     font-size: 20px;
     color: rgb(141, 141, 91);
     text-align: center;
-    padding: 5%;
+    margin: 3%;
+    padding: 3%;
 }
 
 .lucasImg img{
-    width: 180px;
-    height: 190px;
+    width: 75%;
+    height: 75%;
 }
 
 .raphael{
+    width: 350px;
+    height: 350px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -109,12 +123,13 @@
     font-size: 20px;
     color: rgb(141, 141, 91);
     text-align: center;
-    padding: 5%;
+    margin: 3%;
+    padding: 3%;
 }
 
 .raphaelImg img{
-    width: 150px;
-    height: 190px;
+    width: 75%;
+    height: 75%;
 }
 
 

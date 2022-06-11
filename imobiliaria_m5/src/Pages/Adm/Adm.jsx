@@ -3,6 +3,7 @@ import axios from "axios";
 import Cabecalho from "../../Components/Cabecalho/Cabecalho";
 import Rodape from '../../Components/rodape/Rodape'
 import { Link } from "react-router-dom";
+import Styles from './Adm.module.css'
 
 
 function Adm() {
@@ -30,12 +31,15 @@ function Adm() {
         <div>
             <Cabecalho />
 
-            <main>
-                <div className="cards">
+            <main  className={Styles.container}>
+
+                <h1 className={Styles.titulo}>Administração</h1>
+                
+                <div className={Styles.containerInicio}>
 
                     {adm.map((adm, key) => {
                         return (
-                            <div className='card'>
+                            <div className={Styles.card}>
 
                                 <header>
                                     <h2>{adm.TIPOPLANO}</h2>                            
@@ -46,16 +50,16 @@ function Adm() {
                                 <p>Seguro Incluso: {adm.SEGUROINCLUSO}</p>
                                 {/*<img src={adm.IMG1} alt=''/>*/}
 
-                                <div className='btns'>
+                                <div className={Styles.btns}>
                                     
                                     <Link to={{ pathname: `/admEdit/${adm.ID}` }}>
-                                        <div className='btn-edit'>
+                                        <div className={Styles.btnEdit}>
                                             <button>Edit</button>
                                         </div>
                                     </Link>
                                         
 
-                                    <div className='btn-delete'>
+                                    <div className={Styles.btnDelete}>
                                         <button onClick={() => {deleteAdm(adm.ID)} }>Delete</button>
                                     </div>
 

@@ -89,7 +89,7 @@ const Cadastro = () => {
                 
                     {/*forms-botão*/}
                     <div className={Styles.containerFormulariosBtn}>
-                        <button className={Styles.formulariosBtn}>Cadastro</button>
+                        <button className={Styles.formulariosBtn} type='submit'>Cadastro</button>
                     </div>
                 </form>
 

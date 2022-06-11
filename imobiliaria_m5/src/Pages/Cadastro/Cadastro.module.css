@@ -109,7 +109,7 @@
 
 .focusInput::after{
     font-size: 15px;
-    color:  rgba(243, 241, 231, 0.279);
+    color:  rgb(91, 89, 87);
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;

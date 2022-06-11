@@ -33,39 +33,45 @@ function Aluguel() {
 
             <main>
                 <div className={styles.container}>
+                    <div className={styles.titulo}>Aluguel</div>
+                    <div className={styles.containerInicio}>
 
-                    {aluguel.map((aluguel, key) => {
-                        return (
-                            <div className='card'>
-
-                                <header>
-                                    <h2>{aluguel.ALUGUELTIPO}</h2>                            
-                                </header>   
-
-                                <p>Valor: {aluguel.VALOR}</p>
-                                <p>Endereço: {aluguel.ENDERECO}</p>
-                                <p>ID Corretor: {aluguel.CORRETORID}</p>
-                                <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
-                                <p>ID Inquilino: {aluguel.INQUILINOID}</p>
-                                <img className={styles.image} src={aluguel.IMG1} alt=''/>
-
-                                <div className='btns'>
+                        {aluguel.map((aluguel, key) => {
+                            return (
+                                <div className={styles.card}>
+                                    <div className={styles.dados}>
+                                        <header>
+                                            <h2>{aluguel.ALUGUELTIPO}</h2>                            
+                                        </header>   
                                     
-                                    <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
-                                        <div className='btn-edit'>
-                                            <button>Edit</button>
-                                        </div>
-                                    </Link>
-                                        
-
-                                    <div className='btn-delete'>
-                                        <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
+                                        <p>Valor: {aluguel.VALOR}</p>
+                                        <p>Endereço: {aluguel.ENDERECO}</p>
+                                        <p>ID Corretor: {aluguel.CORRETORID}</p>
+                                        <p>ID Proprietario: {aluguel.PROPRIETARIOID}</p>
+                                        <p>ID Inquilino: {aluguel.INQUILINOID}</p>
+                                    </div>
+                                    <div className={styles.imagem}>
+                                            <img className={styles.img} src={aluguel.IMG1} alt=''/>
                                     </div>
 
-                            </div>
-                        </div> 
-                        )
-                    })}
+                                    <div className={styles.btns}>
+                                    
+                                        <Link to={{ pathname: `/aluguelEdit/${aluguel.ID}` }}>
+                                            <div className={styles.btnEdit}>
+                                            <button>Edit</button>
+                                            </div>
+                                        </Link>
+                                        
+
+                                        <div className={styles.btnDelete}>
+                                            <button onClick={() => {deleteAluguel(aluguel.ID)} }>Delete</button>
+                                        </div>
+
+                                    </div>
+                                </div> 
+                            )
+                         })}
+                    </div>
                     
                 </div>
             </main>
