@@ -65,19 +65,9 @@
 
 # Equipe:
 
-<div  align="center" justify-content="center"><br>
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="200" style="max-width:100%;">
-
-Eliane Cristina
-<a  href="https://github.com/JoceliaHora
-"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="200" style="max-width:100%;">
-
-Eliane Cristina
-<a  href="https://github.com/JoceliaHora
-"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
-</div>
+<p float="left">
+  <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" /> <p>Eliane Cristina</p>
+  <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" /> 
+  
+  <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" />
+</p>
