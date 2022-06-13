@@ -64,11 +64,10 @@
 
 
 # Equipe:
+<div  align="center"> <br>
 
-<div  align="center"><br>
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
 
-    <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria- resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
 
-    <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-  resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
-    
 </div>
