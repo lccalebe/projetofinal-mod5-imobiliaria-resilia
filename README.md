@@ -66,14 +66,14 @@
 # Equipe:
 
 <div  align="center"><br>
-
+<div>
 <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="200" style="max-width:100%;">
 
 Eliane Cristina
 <a  href="https://github.com/JoceliaHora
 "><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
 </a>
-
+</div>
 
 
 
