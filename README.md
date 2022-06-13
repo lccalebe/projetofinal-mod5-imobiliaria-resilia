@@ -1,6 +1,13 @@
 ### PROJETO MODULO 5 - GRUPO 3
 ## IMOBILIÁRIA RESILIA :house:
 
+  
+  O projeto consiste em um site de imobiliária, onde é possível que o usuário, visualize os imóveis disponíveis para compra e venda, tenha acesso aos contatos do corretores e os tipos de serviços ofertados pela imobiliária. É possível também adicionar, editar e deletar os imoveis através do consumo das APIs.
+Na parte de cadastro o usuário consegue se cadastrar e fazer seu login .
+
+## Acesse o site
+https://beeimoveis.netlify.app/
+
 ## Instalação
     - Para a instalação das dependencias do projeto, apois fazer o clone do projeto com o comando:
     - git clone (url do projeto)
@@ -76,5 +83,3 @@ Luciana Vivarelli <a href="https://github.com/LucianaVivarelli"><img  src="https
 Jocélia Oliveira <a  href="https://www.linkedin.com/in/joceliaoliveira/"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://github.com/JoceliaHora"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
 
 Raphael Vicentini<a  href="https://www.linkedin.com/in/raphael-victor-pereira-vicentini-10a81272"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://github.com/raphaelvicentini"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
-
-
