@@ -46,11 +46,19 @@
 
 #  Tecnologias e Ferramentas utilizadas
 
-<div align="center"><br>
-<img align="center" alt="javaScript" height="10%" width="10%" style="margin-right:10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-<img align="center" alt="vscode" height="10%" width="10%" style="margin-right:10px; margin-top:20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
-<img align="center" alt="git" height="10%" width="10%" style="margin-right:10px; margin-top:20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
-<img align="center" alt="vscode" height="10%" width="10%" style="margin-right:10px; margin-top:20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+<div  align="center"><br>
+
+<img  align="center"  alt="javaScript"  height="10%"  width="10%"  style="margin-right:10px"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+
+<img  align="center"  alt="vscode"  height="10%"  width="10%"  style="margin-right:10px; margin-top:20px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+
+<img  align="center"  alt="git"  height="10%"  width="10%"  style="margin-right:10px; margin-top:20px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+
+<img  align="center"  alt="vscode"  height="10%"  width="10%"  style="margin-right:10px; margin-top:20px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+
+<img  align="center"  alt="vscode"  height="10%"  width="10%"  style="margin-right:10px; margin-top:20px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+
+<img  align="center"  alt="vscode"  height="10%"  width="10%"  style="margin-right:10px; margin-top:20px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg"/>
 
 </div>
 
