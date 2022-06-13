@@ -81,11 +81,12 @@
     
     </div>
     
-    <div  align="center"><br>
+<div  align="center"><br>
     Eliane Cristina
 <a  href="https://github.com/JoceliaHora
 "><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
 </a>
+    
 Eliane Cristina
 <a  href="https://github.com/JoceliaHora
 "><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
