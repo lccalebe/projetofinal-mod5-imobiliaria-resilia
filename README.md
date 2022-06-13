@@ -66,22 +66,6 @@
 # Equipe:
 
 
-<div  align="center"> <br>
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/lucas.jpg" width="100" style="max-width:100%;">
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/luciana.jpg" width="100" style="max-width:100%;">
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/jocelia.jpg" width="100" style="max-width:100%;">
-
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/raphael.jpg" width="100" style="max-width:100%;">
-
-</div>
-
-# Contato da Equipe
-
 Eliane Cristina <a  href="https://github.com/ElianeCristina"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://www.linkedin.com/in/eliane-cristina-nunes-correia/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
 
 
