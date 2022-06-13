@@ -64,22 +64,12 @@
 
 
 # Equipe:
-  [Eliane Cristina Nunes Correia](https://www.linkedin.com/in/eliane-cristina-nunes-correia/
-) <a href="https://github.com/ElianeCristina
-"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
 
- [Jocélia Oliveira](https://www.linkedin.com/in/joceliaoliveira/) <a href="https://github.com/JoceliaHora
-"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
-
- [Lucas Calebe Botelho da Silva](https://www.linkedin.com/in/lucascalebe/) <a href="https://github.com/lccalebe"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
+<div  align="center"><br>
+<img align="center"  alt="time"  height="25%"  width="25%"  style="margin-right:10px; margin-top:20px; " src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg"/>
+<p>Eliane Cristina </p> 
+<img align="center"  alt="time"  height="25%"  width="25%"  style="margin-right:10px; margin-top:20px; " src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/jocelia.jpg"/>
+<p>Jocélia Oliveira </p> 
 
 
- [Luciana Vivarelli Valgode](https://www.linkedin.com/in/luciana-vivarelli-valgode-34640815a/) <a href="https://github.com/LucianaVivarelli"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
-
-
-[Raphael Vicentini](https://www.linkedin.com/in/raphael-victor-pereira-vicentini-10a81272) <a href="https://github.com/raphaelvicentini"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
-</a>
+</div>
