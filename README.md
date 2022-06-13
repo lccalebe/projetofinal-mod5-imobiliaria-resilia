@@ -64,10 +64,33 @@
 
 
 # Equipe:
+
+
 <div  align="center"> <br>
 
 <img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
 
-<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="100" style="max-width:100%;">
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/lucas.jpg" width="100" style="max-width:100%;">
+
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/luciana.jpg" width="100" style="max-width:100%;">
+
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/jocelia.jpg" width="100" style="max-width:100%;">
+
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/raphael.jpg" width="100" style="max-width:100%;">
 
 </div>
+
+# Contato da Equipe
+
+Eliane Cristina <a  href="https://github.com/ElianeCristina"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://www.linkedin.com/in/eliane-cristina-nunes-correia/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
+
+
+Lucas Caleb <a  href="https://github.com/lccalebe"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://www.linkedin.com/in/lucascalebe/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
+
+Luciana Vivarelli <a href="https://github.com/LucianaVivarelli"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://www.linkedin.com/in/luciana-vivarelli-valgode-34640815a/"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
+
+Jocélia Oliveira <a  href="https://www.linkedin.com/in/joceliaoliveira/"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://github.com/JoceliaHora"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
+
+Raphael Vicentini<a  href="https://www.linkedin.com/in/raphael-victor-pereira-vicentini-10a81272"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a><a  href="https://github.com/raphaelvicentini"><img src="https://img.icons8.com/fluency/344/linkedin.png" width= 25px; /></a>
+
+
