@@ -66,10 +66,11 @@
 # Equipe:
 
 <div  align="center"><br>
-<img align="center"  alt="time"  height="25%"  width="25%"  style="margin-right:10px; margin-top:20px; " src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg"/>
-<p>Eliane Cristina </p> 
-<img align="center"  alt="time"  height="25%"  width="25%"  style="margin-right:10px; margin-top:20px; " src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/jocelia.jpg"/>
-<p>Jocélia Oliveira </p> 
 
+<img src="https://raw.githubusercontent.com/lccalebe/projetofinal-mod5-imobiliaria-resilia/master/imobiliaria_m5/src/assets/eliane.jpg" width="200" style="max-width:100%;">
 
+Eliane Cristina
+<a  href="https://github.com/JoceliaHora
+"><img  src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
+</a>
 </div>
